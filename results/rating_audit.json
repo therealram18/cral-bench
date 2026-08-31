@@ -1,0 +1,122 @@
+[
+ {
+  "case": "case4gs",
+  "branches": 4,
+  "unlimited": 0,
+  "frac": 0.0,
+  "median_rateA": 250.00000000000145,
+  "base_max_loading": 61.5
+ },
+ {
+  "case": "case5",
+  "branches": 6,
+  "unlimited": 4,
+  "frac": 0.667,
+  "median_rateA": 39836770.202398434,
+  "base_max_loading": 100.2
+ },
+ {
+  "case": "case6ww",
+  "branches": 11,
+  "unlimited": 0,
+  "frac": 0.0,
+  "median_rateA": 39.9999999999996,
+  "base_max_loading": 94.0
+ },
+ {
+  "case": "case9",
+  "branches": 9,
+  "unlimited": 0,
+  "frac": 0.0,
+  "median_rateA": 250.0000000000015,
+  "base_max_loading": 65.5
+ },
+ {
+  "case": "case14",
+  "branches": 20,
+  "unlimited": 20,
+  "frac": 1.0,
+  "median_rateA": 9900.0,
+  "base_max_loading": 1.5
+ },
+ {
+  "case": "case24_ieee_rts",
+  "branches": 38,
+  "unlimited": 0,
+  "frac": 0.0,
+  "median_rateA": 499.9999999999989,
+  "base_max_loading": 87.2
+ },
+ {
+  "case": "case30",
+  "branches": 41,
+  "unlimited": 0,
+  "frac": 0.0,
+  "median_rateA": 31.999999999998916,
+  "base_max_loading": 111.8
+ },
+ {
+  "case": "case33bw",
+  "branches": 32,
+  "unlimited": 32,
+  "frac": 1.0,
+  "median_rateA": 2192754.394618975,
+  "base_max_loading": 0.0
+ },
+ {
+  "case": "case39",
+  "branches": 46,
+  "unlimited": 0,
+  "frac": 0.0,
+  "median_rateA": 600.0,
+  "base_max_loading": 73.4
+ },
+ {
+  "case": "case57",
+  "branches": 80,
+  "unlimited": 80,
+  "frac": 1.0,
+  "median_rateA": 9900.0,
+  "base_max_loading": 1.8
+ },
+ {
+  "case": "case89pegase",
+  "branches": 210,
+  "unlimited": 101,
+  "frac": 0.481,
+  "median_rateA": 1797.0000000000018,
+  "base_max_loading": 96.4
+ },
+ {
+  "case": "case118",
+  "branches": 186,
+  "unlimited": 186,
+  "frac": 1.0,
+  "median_rateA": 9900.0,
+  "base_max_loading": 4.5
+ },
+ {
+  "case": "case145",
+  "branches": 453,
+  "unlimited": 344,
+  "frac": 0.759,
+  "median_rateA": 17320334.870608017,
+  "base_max_loading": 21.4
+ },
+ {
+  "case": "case300",
+  "branches": 411,
+  "unlimited": 411,
+  "frac": 1.0,
+  "median_rateA": 9900.0,
+  "base_max_loading": 8.7
+ },
+ {
+  "case": "case1354pegase",
+  "branches": 1991,
+  "unlimited": 495,
+  "frac": 0.249,
+  "median_rateA": 591.0,
+  "base_max_loading": 105.7
+ }
+]

@@ -1,0 +1,416 @@
+{
+ "meta": {
+  "task": "critic-v3 verification/computation pass on powergrid pack",
+  "pack": "neurips26_powergrid_pack_2026-08-27/powergrid",
+  "draft": "papers/powergrid/main.tex (read-only)",
+  "no_api_calls": true,
+  "python": "pandapower 3.5.4 venv, local computation only",
+  "cross_checks": "every computed number independently re-derived from canonical JSONL/JSON on disk with its own script; matched published v2_sdt_results.json / luna_sdt_results.json / qlims_rescore_results.json / framing_increment.py reference values before being trusted (see per-item notes)."
+ },
+ "item1_N3_composition_accounting": {
+  "question": "18 flips including diverging base, or 17 flips + 1 dropped? Settle the 'dropped vs relabeled' composition accounting.",
+  "old_composition": {
+   "TRICKY": 58,
+   "EASY": 17,
+   "INFEASIBLE": 188
+  },
+  "new_composition_FOLDED_relabeled_to_INFEASIBLE": {
+   "TRICKY": 42,
+   "EASY": 15,
+   "INFEASIBLE": 206
+  },
+  "new_composition_TRUE_DROPPED_excl_base_diverge": {
+   "TRICKY": 42,
+   "EASY": 15,
+   "INFEASIBLE": 205
+  },
+  "base_diverging_row": {
+   "case": "case39",
+   "item_id": "0",
+   "tag": "anchor",
+   "old_label": "TRICKY",
+   "old_sub": "drastic",
+   "n_fixers_old": 1,
+   "new_n_fixers_qlims": 0,
+   "new_label": "INFEASIBLE",
+   "new_sub": null,
+   "base_diverges": true,
+   "flipped": true,
+   "re_tested_under_qlims": true
+  },
+  "n_flips_including_diverging_row": 18,
+  "n_flips_excluding_diverging_row_TRUE_FLIPS": 17,
+  "case39_fixable_n": 36,
+  "case30_fixable_n": 39,
+  "total_fixable_n": 75,
+  "ratios": {
+   "pct_of_benchmark_17_over_263": 0.06463878326996197,
+   "pct_of_benchmark_17_over_262": 0.0648854961832061,
+   "pct_of_fixables_17_over_75": 0.22666666666666666,
+   "pct_of_case39_fixables_17_over_36": 0.4722222222222222,
+   "always_escalate_raw_dropped_accounting_205_over_262": 0.7824427480916031
+  },
+  "paper_text_main_tex_lines_345_349": "One case39 base state itself fails to converge under q-lims and is dropped, not relabeled; prompts were rendered from the original states, so this is label-sensitivity, not a re-run. 18/36 case39 fixable items flip (50%) --- 18/75 overall (24%), 18/263 of the benchmark (6.8%); new composition 15/42/206. All 30 Delta c cells stay negative, CI excluding zero (3.7-flash -0.589->-0.714, pro -1.163->-1.145, luna -1.400->-1.197).",
+  "inconsistency_found": "The paper says the diverging item is 'dropped, not relabeled', but its own printed composition 15/42/206 SUMS TO 263 -- i.e. the item is still counted, just moved into the INFEASIBLE bucket. That is the definition of RELABELING (folding into INFEASIBLE), not dropping. A genuinely dropped item would leave a benchmark of 262 with composition 15/42/205 (verified exactly from analysis/qlims_labels.json rows). Likewise the '18/263 (6.8%)' and the printed Delta c values (-0.714/-1.145/-1.197) both come from the FOLDED/relabeled variant (analysis/qlims_rescore_results.json variant 'new_with_bd'), not from the true-dropped variant ('new_excl_bd': Delta c = -0.703/-1.141/-1.199, n=262, raw always-escalate 205/262=0.7824). The 'real' flip count under a true-dropped accounting is 17 (16 TRICKY->INFEASIBLE minus the 1 that is the diverging row, plus 2 EASY->INFEASIBLE), not 18.",
+  "consequence": "Purely a labeling/wording precision issue -- no sign flips, no conclusion changes; the with_bd and excl_bd Delta c variants differ by <=0.02 in every case (already shown in qlims_sensitivity.md section 2a, independently reproduced here from analysis/qlims_rescore_results.json directly).",
+  "recommendation": "Either (a) fix the wording to 'folded into infeasible (relabeled), not dropped' and keep the current 18/263/15-42-206 numbers, which is what was actually computed; or (b) actually drop the row and switch to 17/262 (15/42/205), Delta c -0.703/-1.141/-1.199, always-escalate raw 205/262=0.7824. (a) is the smaller edit and matches the analysis already run.",
+  "verdict": "CONFIRMED INCONSISTENCY (wording vs. numbers), NOT a conclusion-changing error. 17 real flips + 1 dropped is the internally-consistent 'dropped' accounting; 18 flips (folded) is what the printed 15/42/206=263 and the printed Delta c values actually reflect."
+ },
+ "item2_N1_six_easy_deltas": {
+  "question": "EASY-label rate deltas I-N and E-I with paired cluster-bootstrap CIs (17 EASY items across their clusters), flash/pro/luna. Which straddle zero?",
+  "results": {
+   "flash": {
+    "model": "gemini-3.7-flash",
+    "rate_N": 0.11764705882352941,
+    "k_N": 2,
+    "n_N": 17,
+    "rate_I": 0.35294117647058826,
+    "k_I": 6,
+    "n_I": 17,
+    "rate_E": 0.35294117647058826,
+    "k_E": 6,
+    "n_E": 17,
+    "delta_IN": 0.23529411764705885,
+    "delta_IN_ci": [
+     0.05555555555555555,
+     0.45454545454545453
+    ],
+    "delta_IN_excludes_0": true,
+    "delta_EI": 0.0,
+    "delta_EI_ci": [
+     -0.16666666666666669,
+     0.16666666666666669
+    ],
+    "delta_EI_excludes_0": false,
+    "n_clusters_with_easy": 17
+   },
+   "pro": {
+    "model": "gemini-3.1-pro-preview",
+    "rate_N": 0.0,
+    "k_N": 0,
+    "n_N": 17,
+    "rate_I": 0.058823529411764705,
+    "k_I": 1,
+    "n_I": 17,
+    "rate_E": 0.0,
+    "k_E": 0,
+    "n_E": 17,
+    "delta_IN": 0.058823529411764705,
+    "delta_IN_ci": [
+     0.0,
+     0.2
+    ],
+    "delta_IN_excludes_0": false,
+    "delta_EI": -0.058823529411764705,
+    "delta_EI_ci": [
+     -0.2,
+     0.0
+    ],
+    "delta_EI_excludes_0": false,
+    "n_clusters_with_easy": 17
+   },
+   "luna": {
+    "model": "gpt-5.6-luna",
+    "rate_N": 0.0,
+    "k_N": 0,
+    "n_N": 17,
+    "rate_I": 0.0,
+    "k_I": 0,
+    "n_I": 17,
+    "rate_E": 0.11764705882352941,
+    "k_E": 2,
+    "n_E": 17,
+    "delta_IN": 0.0,
+    "delta_IN_ci": [
+     0.0,
+     0.0
+    ],
+    "delta_IN_excludes_0": false,
+    "delta_EI": 0.11764705882352941,
+    "delta_EI_ci": [
+     0.0,
+     0.29411764705882354
+    ],
+    "delta_EI_excludes_0": false,
+    "n_clusters_with_easy": 17
+   }
+  },
+  "n_straddling_zero_of_6": 5,
+  "n_excluding_zero_of_6": 1,
+  "which_excludes_zero": "gemini-3.7-flash delta(NONE_INDEX - NO_ESCAPE) = +0.235, 95% CI [0.056, 0.455] -- the only one of 6 that excludes zero.",
+  "verdict": "CONFIRMED: 5 of 6 straddle zero, exactly matching the 'expect most' prior. Only flash's bare-affordance (I-N) EASY-rate delta is significant; every E-I delta (all 3 models) and pro/luna's I-N deltas include zero -- consistent with EASY being only 17 items (low power) and luna/pro's EASY escalation rates all sitting at or near 0/17 in most arms (floor effects, not evidence of no effect)."
+ },
+ "item3_N8_share_CI": {
+  "question": "CI on share = Delta_c(NONE_INDEX-NO_ESCAPE) / Delta_c(ESCALATE-NO_ESCAPE), M4+loglinear, per model. Is the 44-67% ordering stable?",
+  "results": {
+   "flash": {
+    "model": "gemini-3.7-flash",
+    "delta_c_EN": -0.5891426197308334,
+    "delta_c_IN": -0.33222911576585773,
+    "share_point": 0.5639196768986873,
+    "share_ci": [
+     0.297818889161312,
+     0.8253104050128139
+    ],
+    "share_median_boot": 0.5615234817782531,
+    "frac_bootstrap_delta_EN_wrong_sign": 0.0
+   },
+   "pro": {
+    "model": "gemini-3.1-pro-preview",
+    "delta_c_EN": -1.1626848444521376,
+    "delta_c_IN": -0.7744074859616883,
+    "share_point": 0.6660510710678375,
+    "share_ci": [
+     0.5079683879176995,
+     0.8014697658380753
+    ],
+    "share_median_boot": 0.6689353507114558,
+    "frac_bootstrap_delta_EN_wrong_sign": 0.0
+   },
+   "luna": {
+    "model": "gpt-5.6-luna",
+    "delta_c_EN": -1.400342032629158,
+    "delta_c_IN": -0.6173233071229418,
+    "share_point": 0.44083751879097016,
+    "share_ci": [
+     0.21663894842128023,
+     0.6806011887612865
+    ],
+    "share_median_boot": 0.4264527635000933,
+    "frac_bootstrap_delta_EN_wrong_sign": 0.0
+   }
+  },
+  "point_estimates_pct": {
+   "flash": 56.4,
+   "pro": 66.6,
+   "luna": 44.1
+  },
+  "verdict": "Point estimates exactly reproduce the '44-67%' figure (luna 44.1% low end, pro 66.6% high end, flash 56.4% in between). CIs are WIDE and OVERLAP HEAVILY: flash [29.8%,82.5%], pro [50.8%,80.1%], luna [21.7%,68.1%]. Every pairwise pair of these three intervals overlaps (e.g. luna's upper bound 68.1% sits inside flash's and pro's ranges; flash's interval alone spans nearly the full luna-to-pro range). The specific ORDERING pro > flash > luna is NOT statistically stable -- all three are consistent with a common share of roughly 45-65%. Report the range as a qualitative fact (\"the bare NONE_INDEX affordance accounts for roughly half, not all, of the named-ESCALATE effect, order not staked out with our number of clusters\") rather than implying a reliable per-model ranking."
+ },
+ "item4_affordance_cost_ratio": {
+  "question": "Affordance-cost ratio (correct-deferral gain on INFEASIBLE vs false-deferrals added), per model, two accountings.",
+  "results": {
+   "flash": {
+    "a": {
+     "gain": 4,
+     "false": 20,
+     "ratio": 5.0,
+     "hS_e": 186,
+     "nS_e": 188,
+     "hS_n": 182,
+     "nS_n": 188,
+     "hN_e": 55,
+     "nN_e": 75,
+     "hN_n": 35,
+     "nN_n": 75
+    },
+    "b": {
+     "gain": 15,
+     "gain_INF": 4,
+     "gain_DR": 11,
+     "false": 9,
+     "ratio": 0.6,
+     "nINF_e": 188,
+     "nINF_n": 188,
+     "nDR_e": 41,
+     "nDR_n": 41,
+     "noise_e": 20,
+     "noise_n": 11,
+     "nEASY_e": 17,
+     "nBEN_e": 17
+    }
+   },
+   "pro": {
+    "a": {
+     "gain": 87,
+     "false": 28,
+     "ratio": 0.3218390804597701,
+     "hS_e": 168,
+     "nS_e": 186,
+     "hS_n": 81,
+     "nS_n": 185,
+     "hN_e": 34,
+     "nN_e": 75,
+     "hN_n": 6,
+     "nN_n": 74
+    },
+    "b": {
+     "gain": 106,
+     "gain_INF": 87,
+     "gain_DR": 19,
+     "false": 9,
+     "ratio": 0.08490566037735849,
+     "nINF_e": 186,
+     "nINF_n": 185,
+     "nDR_e": 41,
+     "nDR_n": 40,
+     "noise_e": 11,
+     "noise_n": 2,
+     "nEASY_e": 17,
+     "nBEN_e": 17
+    }
+   },
+   "luna": {
+    "a": {
+     "gain": 92,
+     "false": 14,
+     "ratio": 0.15217391304347827,
+     "hS_e": 103,
+     "nS_e": 188,
+     "hS_n": 11,
+     "nS_n": 188,
+     "hN_e": 14,
+     "nN_e": 75,
+     "hN_n": 0,
+     "nN_n": 75
+    },
+    "b": {
+     "gain": 101,
+     "gain_INF": 92,
+     "gain_DR": 9,
+     "false": 5,
+     "ratio": 0.04950495049504951,
+     "nINF_e": 188,
+     "nINF_n": 188,
+     "nDR_e": 41,
+     "nDR_n": 41,
+     "noise_e": 5,
+     "noise_n": 0,
+     "nEASY_e": 17,
+     "nBEN_e": 17
+    }
+   }
+  },
+  "accounting_a_raw_matches_critic_claims": {
+   "pro": "28/87 = 0.322 -- EXACT MATCH to critic's claim",
+   "flash": "20/4 = 5.0 -- EXACT MATCH to critic's claim",
+   "luna": "14/92 = 0.152 (critic did not state a claim for luna)"
+  },
+  "accounting_b_M4": {
+   "flash": "false=9 (EASY+benign-TRICKY, 20/34-11/34), gain=15 (INFEASIBLE 4 + drastic-TRICKY 11), ratio=0.60",
+   "pro": "false=9 (11/34-2/34), gain=106 (INFEASIBLE 87 + drastic-TRICKY 19), ratio=0.085",
+   "luna": "false=5 (5/34-0/34), gain=101 (INFEASIBLE 92 + drastic-TRICKY 9), ratio=0.050"
+  },
+  "verdict": "Both accountings VERIFIED exactly from canonical v2_ladder_*.jsonl (accounting-a numbers reproduce the critic's cited 28/87 and 20/4 to the exact integer). The two accountings tell OPPOSITE stories for flash: raw makes flash look terrible (5 false deferrals added per correct one gained), M4 makes it look tolerable (0.6 false per correct gained) because M4 additionally credits flash's higher escalation rate on drastic-TRICKY as a correct-deferral gain rather than ignoring it. RECOMMENDATION: M4 is the more defensible accounting for print, because (1) it is already the paper's own primary/preferred mapping everywhere else, and (2) escalating on a genuinely drastic (shed/open_line) TRICKY item is not a mistake the raw accounting should silently discard as neutral -- it is exactly the 'correct to defer' behavior the paper's own M4 argument treats it as elsewhere. Using the raw accounting for this one item while using M4 everywhere else in the paper would be a hidden double standard; report M4's numbers (flash 0.60, pro 0.085, luna 0.050) as primary and raw as a robustness footnote."
+ },
+ "item5_N9_M4_defense_facts": {
+  "a_M2_vs_M4_magnitude": {
+   "source": "analysis/v2_sdt_results.json part3_deltas (flash/pro), analysis/qlims_rescore_results.json 'old' variant (luna, cross-checked identical to v2_sdt_results.json convention)",
+   "loglinear": {
+    "flash": {
+     "M2": -0.5479,
+     "M4": -0.5891,
+     "M4_larger": true
+    },
+    "pro": {
+     "M2": -1.3446,
+     "M4": -1.1627,
+     "M4_larger": false
+    },
+    "luna": {
+     "M2": -1.6359,
+     "M4": -1.4003,
+     "M4_larger": false
+    }
+   },
+   "clamp": {
+    "flash": {
+     "M2": -0.5781,
+     "M4": -0.6073,
+     "M4_larger": true
+    },
+    "pro": {
+     "M2": -1.3686,
+     "M4": -1.2092,
+     "M4_larger": false
+    },
+    "luna": {
+     "M2": -1.6361,
+     "M4": -1.3828,
+     "M4_larger": false
+    }
+   },
+   "critic_claim_check": "Critic quoted '-1.345 vs -1.163' -- this EXACTLY matches PRO's loglinear M2/M4 values (-1.3446 rounds to -1.345, -1.1627 rounds to -1.163). VERIFIED for pro. Also true for luna (both corrections) -- M2 magnitude > M4 magnitude. FALSE FOR FLASH: flash's M4 (-0.589/-0.607) is LARGER in magnitude than its M2 (-0.548/-0.578), the opposite direction. So the critic's claim, read as a per-model fact about pro, is correct; read as a general 'M2 always exceeds M4' claim, it is FALSE -- it fails for flash.",
+   "verdict": "PARTIALLY CONFIRMED: true for pro (as literally quoted) and for luna, FALSE for flash (reversed). Do not generalize the critic's -1.345/-1.163 pair beyond the pro model it came from."
+  },
+  "b_certified_action_pick_rates": {
+   "source": "signal_noise_sensitivity.log section [4c], lines 268-276 and 412-420",
+   "quote": "gemini-3.7-flash NO_ESCAPE picked-a-certified-action | did-not-escalate: EASY=0.667 (n=12) TRICKY.benign=0.667 (n=6) TRICKY.drastic=0.100 (n=10); gemini-3.7-flash-think NO_ESCAPE: EASY=0.643 (n=14) TRICKY.benign=0.714 (n=7) TRICKY.drastic=0.071 (n=14). 'In the NO_ESCAPE arm, among items where gemini-3.7-flash chose to act, it picked a certified action on 0.667 of EASY and 0.667 of TRICKY-benign -- but only 0.100 of TRICKY-drastic (thinking arm: 0.643/0.714/0.071).'",
+   "range_across_gemini_rows": "EASY 0.600-0.667 across gemini-3.5-flash/3.7-flash/3.7-flash-think; TRICKY.drastic 0.000-0.100 across the same rows -- matches the claimed '~0-10% vs 0.60-0.67' exactly.",
+   "verdict": "QUOTE VERIFIED VERBATIM, exact numbers reproduced from the log."
+  }
+ },
+ "item6_N2_luna_correction_floor": {
+  "false_alarm_counts": {
+   "NO_ESCAPE_EASY": "0/17",
+   "NO_ESCAPE_TRICKY": "0/58 (both benign 0/17 and drastic 0/41 subsets are therefore also 0, since the union is 0)",
+   "per_mapping_NO_ESCAPE_noise_pool": {
+    "M1": "0/17",
+    "M2": "0/75",
+    "M3": "0/17",
+    "M4": "0/34",
+    "M5": "0/34"
+   }
+  },
+  "confirmed": "FA=0 under EVERY mapping's noise definition on NO_ESCAPE -- verified directly from v2_ladder_gpt-5.6-luna_NO_ESCAPE.jsonl, not just claimed.",
+  "correction_constant": {
+   "formula": "p_N = (0 + 0.5) / (n + 1)  [log-linear/Hautus correction, k=0]",
+   "M4_n34": "p_N = 0.5/35 = 0.01429, z(p_N) = -2.1893",
+   "reproduction": "M4+loglinear: NO_ESCAPE z(H)=-1.6449 z(F)=-2.1893 -> c(N)=+1.9171; ESCALATE z(H)=-0.0272 z(F)=-1.0063 -> c(E)=+0.5168; Delta c = c(E)-c(N) = -1.4003, reproduces the paper's -1.400 to 3dp exactly, entirely from this formula plus the ESCALATE-arm rates -- no hidden fudge."
+  },
+  "correction_floor_bound": {
+   "computation": "If exactly ONE false alarm had occurred among the 34 M4-noise items instead of zero, z(F) would move from -2.1893 to -1.7185, shifting c(N) by -0.235 SD (since c=-0.5*(zH+zF), a 0.47 change in zF moves c by half that).",
+   "honest_phrasing": "The NO_ESCAPE side of luna's M4 criterion sits at a rate-correction floor: c(NO_ESCAPE)=+1.917 is set entirely by the log-linear pseudo-count formula on a TRUE ZERO, not by any near-miss in the data. A single hypothetical false alarm among the 34 noise items (0-> 1/34) would move c(NO_ESCAPE) by about 0.24 SD -- roughly one-sixth of the reported 1.40 SD Delta c. The floor is real but not fragile: it would take roughly 6 such single-item perturbations in the same direction to erase the effect, which is far more than the n=1 sensitivity a reviewer might fear from '0 false alarms' alone. Defensible phrasing: 'luna's criterion shift would remain outside +-1 SD of its current value under any plausible one-item change to its (currently zero) false-alarm count.'"
+  },
+  "pinned_cell_definition": "A (mapping, arm) SDT cell is CORRECTION-PINNED if its pooled hit or false-alarm count sits at a hard floor/ceiling (h in {0,n_S} or f in {0,n_N}) -- i.e. its z-score is set by the correction formula's pseudo-count alone, not by any internal gradient in the data. (Same definition already used by v2_sdt_analysis.py's 'floor_ceiling' flag, reused here, not invented fresh.)",
+  "pinned_counts": {
+   "a_E_vs_N_grid": "10/10 cells pinned (5 mappings x 2 corrections). Every mapping's NO_ESCAPE side is pinned (hN=0 regardless of how EASY/TRICKY are pooled, since NO_ESCAPE has 0 escalations on EASY AND on TRICKY). ESCALATE side is never pinned for any mapping.",
+   "b_I_vs_N_grid": "10/10 cells pinned, same reason (NO_ESCAPE side always pinned; NONE_INDEX side additionally pinned for M1/M3 since those mappings' noise pool is EASY-only and NONE_INDEX EASY = 0/17).",
+   "c_E_vs_I_increment_grid": "4/10 cells pinned -- ONLY M1 and M3 (both corrections). luna's NONE_INDEX EASY=0/17 pins M1 and M3 specifically because those are the only two mappings whose noise pool is EASY ALONE; M2/M4/M5 all include TRICKY in the NONE_INDEX noise pool, and NONE_INDEX TRICKY=4/58 (nonzero), so those three mappings are NOT pinned on the NONE_INDEX side. This is the precise answer to 'which cells does I-EASY=0/17 pin': M1 and M3, and only in the I-vs-N and E-vs-I grids (in the E-vs-N grid it plays no role at all, since that grid never uses NONE_INDEX)."
+  },
+  "verdict": "ALL CONFIRMED with exact numbers. luna's 0-FA floor is real, quantified (0.24 SD per single-item perturbation, M4 spec), and its scope is precisely bounded: it pins 10/10 cells in both the E-vs-N and I-vs-N grids, but only 4/10 (M1, M3) in the E-vs-I increment grid used for the framing-increment/share analysis."
+ },
+ "item7_N5_sweep_universe": {
+  "universe": "18 flagged case39 scenarios (the q-lims TRICKY/EASY->INFEASIBLE flip items, reconstructed from analysis/qlims_flip_results.json: 16 TRICKY->INFEASIBLE + 2 EASY->INFEASIBLE) x 50 menu actions = 900 scenario-action pairs, solved under enforce_q_lims=True with certify_v2.py's own solver settings (numba=False, max_iteration=30).",
+  "total_baseline_fail": 133,
+  "rescue_settings": "11 alternative solver-setting combinations tried per failing pair: init in {dc, flat}, max_iteration=500, tolerance_mva=0.001, and every combination of those three axes.",
+  "n_rescued_converge": 25,
+  "n_rescued_and_clears": 0,
+  "source": "analysis/critic_v2_checks.json item2_convergence_rescue_sweep (fields total_baseline_fail=133, n_rescued_converge=25, n_rescued_and_clears=0) -- re-read and confirmed verbatim, not recomputed (would require re-running pandapower AC solves already done and logged by the prior critic pass; the task brief instructs restating this precisely, not re-deriving it).",
+  "round1_102_reconciliation": "critic_v2_checks.md (lines 44-78) already investigated this and found '102' does NOT reproduce under ANY natural, fully-specified scope on this machine -- including the hypothesis in this task's brief that it came from the ORIGINAL (non-q-lims) settings: under enforce_q_lims=False (the paper's actual setting), only 1 of the 900 pairs fails to converge, not 102. Nor does 102 match the q-lims-scope 133, the certified-fixer-only scope (24 pairs), or the base-state-excluded scope (88/850). The originating 'review_audit_2026-08-28' directory that presumably produced 102 is confirmed absent from this machine.",
+  "one_sentence_reconciliation": "The premise that round-1's '102' reflects the original non-q-lims settings does NOT hold up -- that scope gives 1 failure, not 102 -- so 102 remains an uncertified, unreproduced number from a missing prior artifact, and the paper should cite 133 (q-lims settings, certify_v2.py's own solver config) as the only number that is actually reproducible from what's on disk.",
+  "verdict": "RESTATED PRECISELY (133 / 25 / 0, universe = 18 scenarios x 50 actions = 900 pairs, q-lims settings). The task's own framing of the 102 discrepancy ('under different original, non-q-lims settings') is FALSIFIED by the existing critic-v2 record -- non-q-lims settings give 1 failure, not 102. 102 is unreproducible under every scope tried; do not restate it as explained by a settings difference."
+ },
+ "item8_draft_checks_read_only": {
+  "a_footer": {
+   "quote": "Submitted to 40th Conference on Neural Information Processing Systems (NeurIPS 2026). Do not distribute.",
+   "source": "compiled main.pdf page 1 footer (pdftotext), driven by neurips_2026.sty \\@neuripsordinal=40th, \\@neuripsyear=2026, line 402 template string.",
+   "verdict": "CONFIRMED, quoted verbatim."
+  },
+  "b_limitations_heading": {
+   "finding": "No dedicated \\section or \\subsection titled 'Limitations' exists anywhere in main.tex. There are two INLINE bold paragraph-lead-ins: line 378 '\\noindent\\textbf{Limitations.}\\label{sec:limitations}' inside the main results section, and line 562 '\\textbf{Known limitations.}' inside the Domain evaluation checklist section. Both are prose paragraphs, not section headings.",
+   "verdict": "CONFIRMED: no Limitations section heading; only inline-bold paragraph markers (twice). Content-wise a limitations discussion exists; structurally it is not a numbered/titled section, which is a stylistic choice common in NeurIPS submissions using space-saving inline paragraph headers, not itself an error."
+  },
+  "c_table1_caption": {
+   "quote": "Escalation rate by label/arm, parsed-only (\\textsc{n}/\\textsc{e}: harness v2; \\textsc{i}=\\textsc{none-index}: harness v2b). Escalating is wrong on \\textsc{easy}/\\textsc{tricky}, right on infeasible. gemini-3.5-flash omitted (gated; see text).",
+   "label": "\\label{tab:rates} (line 269), this is the paper's first table -> Table 1",
+   "cross_check": "Table's printed EASY row (pro 0.000/0.059/0.000, flash 0.118/0.353/0.353, luna 0.000/0.000/0.118) reproduces EXACTLY the N/I/E rates independently recomputed in item 2 above from raw v2_ladder_*.jsonl -- confirms Table 1's numbers are correct, not just its prose.",
+   "verdict": "CONFIRMED, quoted verbatim, and independently numerically verified."
+  },
+  "d_released_vs_no_repo": {
+   "abstract_quote": "\"Report deferral under both a bare and a named option; substrate, scorer, and labels released.\" (main.tex line ~49, past tense, implies completed release)",
+   "checklist_quote": "\"At camera-ready we will release the scenario generator, ... No repository accompanies this anonymized submission.\" (main.tex lines 464-486, future tense, explicit non-release for anonymity)",
+   "verdict": "CONFIRMED CONTRADICTION: the abstract's past-tense 'released' overclaims against the checklist's own explicit, correct disclosure that release is deferred to camera-ready and no repository is included in this anonymized submission. Recommend changing the abstract to 'to be released' / 'released at camera-ready' to match the checklist."
+  },
+  "e_easy81_arm_labels": {
+   "quote": "\"EASY-81 replicates the shift in all three Gemini tiers (parsed-only, max unparsed 2/81): 3.7-flash 0.407 (33/81) vs. 0.111 (9/81), 3.5-flash 0.138 (11/80) vs. 0.013 (1/80), pro 0.100 (8/80) vs. 0.013 (1/79).\" (lines 337-339)",
+   "check": "No explicit \\textsc{escalate}/\\textsc{no-escape} labels are printed on this sentence (unlike Table 1's N/I/E column headers); order is implicit. Verified against analysis/qlims_sensitivity.md section 3 (ALL-81 column): gemini-3.7-flash ESCALATE 81/33/0.407, NO_ESCAPE 81/9/0.111 -- MATCHES the sentence's first-then-second order exactly for all three models. So the numbers are ESCALATE-first, NO_ESCAPE-second consistently, and correct.",
+   "separate_note": "This EASY-81 (served-load-rule) sentence is DIFFERENT from two other 'EASY-81 re-certification' results elsewhere in the paper: (i) line 154 '79/81 pass strictly, 2 pass only the relaxed variant' is the SAME served-load rule re-audit (79 strict-pass + 2 relaxed-pass = 81, consistent), and (ii) analysis/qlims_sensitivity.md's EASY-81 q-lims re-certification gives a THIRD, unrelated number (75/81=92.6% survive under enforce_q_lims=True, 2 demoted to TRICKY, 4 to INFEASIBLE) that does not appear to be quoted anywhere in main.tex. No error, but the paper stress-tests EASY-81 on two independent axes (served-load, q-lims) and only reports one of them (served-load) in the main text -- worth confirming that's an intentional scope choice, not an oversight.",
+   "verdict": "NO MISLABELING FOUND; arm order is implicit but consistent and numerically verified correct in every instance."
+  },
+  "f_fukui_wording": {
+   "quote": "\"SDT analysis of LLMs exists with temperature \\citep{sdtllms2026} or across generations at fixed orchestration \\citep{fukui2026cliff};\" (main.tex line 81-83)",
+   "verdict": "QUOTED VERBATIM, unchanged since last verification -- editor should leave this sentence untouched."
+  }
+ }
+}

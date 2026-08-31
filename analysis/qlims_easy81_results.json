@@ -1,0 +1,1570 @@
+[
+ {
+  "case": "case30",
+  "item_id": "minted0",
+  "tripped_line": 14,
+  "load_scale": 1.02131,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%",
+   "increase generator 4 active output by 30%"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted1",
+  "tripped_line": 4,
+  "load_scale": 1.01519,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 7,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 0 voltage setpoint by 0.02 pu",
+   "raise generator 1 voltage setpoint by 0.02 pu",
+   "increase generator 1 active output by 30%",
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted2",
+  "tripped_line": 6,
+  "load_scale": 1.02465,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted3",
+  "tripped_line": 32,
+  "load_scale": 1.0335,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted4",
+  "tripped_line": 33,
+  "load_scale": 1.02662,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted5",
+  "tripped_line": 27,
+  "load_scale": 0.99745,
+  "old_label": "EASY",
+  "old_n_fixers": 10,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 10,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 0 voltage setpoint by 0.02 pu",
+   "lower generator 1 voltage setpoint by 0.02 pu",
+   "decrease generator 1 active output by 30%",
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "raise generator 3 voltage setpoint by 0.02 pu",
+   "decrease generator 3 active output by 30%",
+   "raise generator 4 voltage setpoint by 0.02 pu",
+   "decrease generator 4 active output by 30%",
+   "raise slack bus 0 voltage setpoint by 0.02 pu",
+   "shed 25% of load 5"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted6",
+  "tripped_line": 22,
+  "load_scale": 1.02775,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted7",
+  "tripped_line": 26,
+  "load_scale": 1.02619,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted8",
+  "tripped_line": 40,
+  "load_scale": 1.06251,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted9",
+  "tripped_line": 28,
+  "load_scale": 1.01724,
+  "old_label": "EASY",
+  "old_n_fixers": 9,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 9,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 0 voltage setpoint by 0.02 pu",
+   "raise generator 1 voltage setpoint by 0.02 pu",
+   "increase generator 1 active output by 30%",
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "raise generator 4 voltage setpoint by 0.02 pu",
+   "increase generator 4 active output by 30%",
+   "raise slack bus 0 voltage setpoint by 0.02 pu"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted10",
+  "tripped_line": 17,
+  "load_scale": 1.01766,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": "minted11",
+  "tripped_line": 18,
+  "load_scale": 1.01712,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "raise generator 2 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted0",
+  "tripped_line": 0,
+  "load_scale": 1.15603,
+  "old_label": "EASY",
+  "old_n_fixers": 10,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "new_label": "INFEASIBLE",
+  "survives_as_easy": false,
+  "lost_fixer_texts": [
+   "raise generator 1 voltage setpoint by 0.02 pu",
+   "increase generator 1 active output by 30%",
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%",
+   "raise slack bus 0 voltage setpoint by 0.02 pu",
+   "raise transformer 1 tap by one step",
+   "raise transformer 2 tap by one step",
+   "shed 25% of load 3"
+  ],
+  "surviving_fixer_texts": []
+ },
+ {
+  "case": "case39",
+  "item_id": "minted1",
+  "tripped_line": 0,
+  "load_scale": 0.92198,
+  "old_label": "EASY",
+  "old_n_fixers": 6,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 6,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted2",
+  "tripped_line": 0,
+  "load_scale": 0.89598,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 2 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted3",
+  "tripped_line": 19,
+  "load_scale": 1.02471,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "new_label": "TRICKY",
+  "survives_as_easy": false,
+  "lost_fixer_texts": [
+   "raise generator 1 voltage setpoint by 0.02 pu",
+   "raise transformer 2 tap by one step"
+  ],
+  "surviving_fixer_texts": [
+   "raise transformer 1 tap by one step"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted4",
+  "tripped_line": 19,
+  "load_scale": 1.00113,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "raise generator 1 voltage setpoint by 0.02 pu",
+   "raise transformer 2 tap by one step"
+  ],
+  "surviving_fixer_texts": [
+   "raise slack bus 0 voltage setpoint by 0.02 pu",
+   "raise transformer 1 tap by one step"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted5",
+  "tripped_line": 19,
+  "load_scale": 0.90681,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted6",
+  "tripped_line": 19,
+  "load_scale": 0.88322,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 2 active output by 30%",
+   "decrease generator 4 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted7",
+  "tripped_line": 9,
+  "load_scale": 1.07755,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "shed 25% of load 3",
+   "open line 2"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted8",
+  "tripped_line": 9,
+  "load_scale": 0.90397,
+  "old_label": "EASY",
+  "old_n_fixers": 9,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 7,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "raise transformer 1 tap by one step",
+   "open line 2"
+  ],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%",
+   "raise slack bus 0 voltage setpoint by 0.02 pu"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted9",
+  "tripped_line": 9,
+  "load_scale": 0.87918,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted10",
+  "tripped_line": 4,
+  "load_scale": 1.11954,
+  "old_label": "EASY",
+  "old_n_fixers": 10,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "new_label": "TRICKY",
+  "survives_as_easy": false,
+  "lost_fixer_texts": [
+   "increase generator 0 active output by 30%",
+   "raise generator 1 voltage setpoint by 0.02 pu",
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%",
+   "raise slack bus 0 voltage setpoint by 0.02 pu",
+   "raise transformer 2 tap by one step",
+   "shed 25% of load 3"
+  ],
+  "surviving_fixer_texts": [
+   "raise transformer 1 tap by one step"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted11",
+  "tripped_line": 4,
+  "load_scale": 0.89289,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "new_label": "INFEASIBLE",
+  "survives_as_easy": false,
+  "lost_fixer_texts": [
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ],
+  "surviving_fixer_texts": []
+ },
+ {
+  "case": "case39",
+  "item_id": "minted12",
+  "tripped_line": 24,
+  "load_scale": 1.15679,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "increase generator 3 active output by 30%"
+  ],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted13",
+  "tripped_line": 24,
+  "load_scale": 0.92259,
+  "old_label": "EASY",
+  "old_n_fixers": 8,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 8,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%",
+   "raise slack bus 0 voltage setpoint by 0.02 pu",
+   "raise transformer 1 tap by one step"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted14",
+  "tripped_line": 24,
+  "load_scale": 0.89657,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted15",
+  "tripped_line": 10,
+  "load_scale": 1.05632,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 7,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "increase generator 0 active output by 30%",
+   "increase generator 1 active output by 30%",
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%",
+   "shed 25% of load 3"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted16",
+  "tripped_line": 10,
+  "load_scale": 0.86622,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted17",
+  "tripped_line": 12,
+  "load_scale": 1.10923,
+  "old_label": "EASY",
+  "old_n_fixers": 6,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 6,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "increase generator 0 active output by 30%",
+   "increase generator 1 active output by 30%",
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted18",
+  "tripped_line": 12,
+  "load_scale": 0.88466,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 6,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "open line 2"
+  ],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted19",
+  "tripped_line": 12,
+  "load_scale": 0.85971,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 4 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted20",
+  "tripped_line": 18,
+  "load_scale": 1.13387,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted21",
+  "tripped_line": 18,
+  "load_scale": 0.8533,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted22",
+  "tripped_line": 33,
+  "load_scale": 1.15373,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "increase generator 0 active output by 30%"
+  ],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted23",
+  "tripped_line": 33,
+  "load_scale": 0.8942,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 7,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%",
+   "open line 2"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted24",
+  "tripped_line": 33,
+  "load_scale": 0.86825,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted25",
+  "tripped_line": 3,
+  "load_scale": 1.15603,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "increase generator 0 active output by 30%"
+  ],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted26",
+  "tripped_line": 3,
+  "load_scale": 0.89598,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted27",
+  "tripped_line": 27,
+  "load_scale": 1.15526,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "increase generator 0 active output by 30%"
+  ],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted28",
+  "tripped_line": 27,
+  "load_scale": 0.89539,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 6,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "open line 2"
+  ],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted29",
+  "tripped_line": 27,
+  "load_scale": 0.8694,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted30",
+  "tripped_line": 30,
+  "load_scale": 1.15373,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "increase generator 0 active output by 30%"
+  ],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted31",
+  "tripped_line": 30,
+  "load_scale": 0.8942,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 7,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%",
+   "open line 2"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted32",
+  "tripped_line": 30,
+  "load_scale": 0.86825,
+  "old_label": "EASY",
+  "old_n_fixers": 6,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 6,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%",
+   "open line 2"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted33",
+  "tripped_line": 30,
+  "load_scale": 0.8423,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "open line 2"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted34",
+  "tripped_line": 22,
+  "load_scale": 1.15144,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "increase generator 0 active output by 30%"
+  ],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted35",
+  "tripped_line": 22,
+  "load_scale": 1.09964,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted36",
+  "tripped_line": 22,
+  "load_scale": 1.07374,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted37",
+  "tripped_line": 22,
+  "load_scale": 1.04784,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted38",
+  "tripped_line": 22,
+  "load_scale": 1.02193,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted39",
+  "tripped_line": 22,
+  "load_scale": 0.99603,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted40",
+  "tripped_line": 22,
+  "load_scale": 0.97013,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted41",
+  "tripped_line": 22,
+  "load_scale": 0.94423,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted42",
+  "tripped_line": 22,
+  "load_scale": 0.91833,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted43",
+  "tripped_line": 22,
+  "load_scale": 0.89243,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted44",
+  "tripped_line": 22,
+  "load_scale": 0.86653,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted45",
+  "tripped_line": 13,
+  "load_scale": 0.9129,
+  "old_label": "EASY",
+  "old_n_fixers": 6,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 6,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted46",
+  "tripped_line": 13,
+  "load_scale": 0.88786,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted47",
+  "tripped_line": 28,
+  "load_scale": 1.0886,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted48",
+  "tripped_line": 28,
+  "load_scale": 1.06411,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted49",
+  "tripped_line": 28,
+  "load_scale": 1.03962,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted50",
+  "tripped_line": 28,
+  "load_scale": 1.01513,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted51",
+  "tripped_line": 28,
+  "load_scale": 0.99065,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted52",
+  "tripped_line": 28,
+  "load_scale": 0.96616,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted53",
+  "tripped_line": 28,
+  "load_scale": 0.94167,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted54",
+  "tripped_line": 28,
+  "load_scale": 0.91718,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted55",
+  "tripped_line": 28,
+  "load_scale": 0.89269,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted56",
+  "tripped_line": 28,
+  "load_scale": 0.86821,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted57",
+  "tripped_line": 32,
+  "load_scale": 1.1545,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "increase generator 0 active output by 30%"
+  ],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted58",
+  "tripped_line": 32,
+  "load_scale": 0.8948,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 7,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%",
+   "open line 2"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted59",
+  "tripped_line": 32,
+  "load_scale": 0.86883,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted60",
+  "tripped_line": 29,
+  "load_scale": 1.05288,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "open line 0"
+  ],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted61",
+  "tripped_line": 29,
+  "load_scale": 0.76867,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "new_label": "INFEASIBLE",
+  "survives_as_easy": false,
+  "lost_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%"
+  ],
+  "surviving_fixer_texts": []
+ },
+ {
+  "case": "case39",
+  "item_id": "minted62",
+  "tripped_line": 29,
+  "load_scale": 0.74498,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "new_label": "INFEASIBLE",
+  "survives_as_easy": false,
+  "lost_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%"
+  ],
+  "surviving_fixer_texts": []
+ },
+ {
+  "case": "case39",
+  "item_id": "minted63",
+  "tripped_line": 8,
+  "load_scale": 1.02518,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 7,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "increase generator 0 active output by 30%",
+   "increase generator 1 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%",
+   "shed 25% of load 0",
+   "shed 25% of load 3"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted64",
+  "tripped_line": 8,
+  "load_scale": 0.86375,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 6,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [
+   "open line 2"
+  ],
+  "surviving_fixer_texts": [
+   "decrease generator 0 active output by 30%",
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted65",
+  "tripped_line": 8,
+  "load_scale": 0.84069,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 4 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted66",
+  "tripped_line": 7,
+  "load_scale": 1.11152,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "increase generator 2 active output by 30%",
+   "increase generator 3 active output by 30%",
+   "increase generator 4 active output by 30%",
+   "increase generator 5 active output by 30%",
+   "open line 0"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted67",
+  "tripped_line": 7,
+  "load_scale": 0.9865,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 3 active output by 30%",
+   "decrease generator 4 active output by 30%",
+   "decrease generator 5 active output by 30%"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": "minted68",
+  "tripped_line": 7,
+  "load_scale": 0.9615,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "new_label": "EASY",
+  "survives_as_easy": true,
+  "lost_fixer_texts": [],
+  "surviving_fixer_texts": [
+   "decrease generator 1 active output by 30%",
+   "decrease generator 2 active output by 30%",
+   "decrease generator 4 active output by 30%"
+  ]
+ }
+]

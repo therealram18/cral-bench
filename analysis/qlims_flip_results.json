@@ -1,0 +1,1254 @@
+[
+ {
+  "case": "case30",
+  "item_id": 0,
+  "tag": "anchor",
+  "tripped_line": 14,
+  "load_scale": 1.307812,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 0,
+  "tag": "far_anchor",
+  "tripped_line": 14,
+  "load_scale": 1.021312,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_v_up",
+   "gen_p_up",
+   "gen_p_up",
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 1,
+  "tag": "anchor",
+  "tripped_line": 10,
+  "load_scale": 1.288281,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 1,
+  "tag": "far_anchor",
+  "tripped_line": 10,
+  "load_scale": 1.096035,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 2,
+  "tag": "anchor",
+  "tripped_line": 20,
+  "load_scale": 1.295313,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 2,
+  "tag": "far_anchor",
+  "tripped_line": 20,
+  "load_scale": 1.102012,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 3,
+  "tag": "anchor",
+  "tripped_line": 4,
+  "load_scale": 1.230859,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 3,
+  "tag": "far_anchor",
+  "tripped_line": 4,
+  "load_scale": 1.047227,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 4,
+  "tag": "anchor",
+  "tripped_line": 6,
+  "load_scale": 1.179688,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 4,
+  "tag": "far_anchor",
+  "tripped_line": 6,
+  "load_scale": 1.109641,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 5,
+  "tag": "anchor",
+  "tripped_line": 12,
+  "load_scale": 1.290625,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 5,
+  "tag": "far_anchor",
+  "tripped_line": 12,
+  "load_scale": 1.098027,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 6,
+  "tag": "anchor",
+  "tripped_line": 39,
+  "load_scale": 1.098438,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 6,
+  "tag": "far_anchor",
+  "tripped_line": 39,
+  "load_scale": 0.934004,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 7,
+  "tag": "anchor",
+  "tripped_line": 32,
+  "load_scale": 1.323437,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 7,
+  "tag": "far_anchor",
+  "tripped_line": 32,
+  "load_scale": 1.0335,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_v_up",
+   "gen_p_up",
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 8,
+  "tag": "anchor",
+  "tripped_line": 19,
+  "load_scale": 1.290625,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 8,
+  "tag": "far_anchor",
+  "tripped_line": 19,
+  "load_scale": 1.098027,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 9,
+  "tag": "anchor",
+  "tripped_line": 33,
+  "load_scale": 1.278906,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 9,
+  "tag": "far_anchor",
+  "tripped_line": 33,
+  "load_scale": 1.088066,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 10,
+  "tag": "anchor",
+  "tripped_line": 27,
+  "load_scale": 1.043164,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 11,
+  "tag": "anchor",
+  "tripped_line": 22,
+  "load_scale": 1.246094,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 11,
+  "tag": "far_anchor",
+  "tripped_line": 22,
+  "load_scale": 1.060176,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 12,
+  "tag": "anchor",
+  "tripped_line": 26,
+  "load_scale": 1.314062,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 12,
+  "tag": "far_anchor",
+  "tripped_line": 26,
+  "load_scale": 1.026187,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_v_up",
+   "gen_p_up",
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 13,
+  "tag": "anchor",
+  "tripped_line": 40,
+  "load_scale": 1.288281,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 13,
+  "tag": "far_anchor",
+  "tripped_line": 40,
+  "load_scale": 1.096035,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_up",
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 14,
+  "tag": "anchor",
+  "tripped_line": 28,
+  "load_scale": 1.142383,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 14,
+  "tag": "far_anchor",
+  "tripped_line": 28,
+  "load_scale": 1.028672,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_v_up",
+   "gen_p_up",
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 15,
+  "tag": "anchor",
+  "tripped_line": 13,
+  "load_scale": 1.288281,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 15,
+  "tag": "far_anchor",
+  "tripped_line": 13,
+  "load_scale": 1.096035,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 16,
+  "tag": "anchor",
+  "tripped_line": 17,
+  "load_scale": 1.303125,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 16,
+  "tag": "far_anchor",
+  "tripped_line": 17,
+  "load_scale": 1.017656,
+  "old_label": "EASY",
+  "old_n_fixers": 3,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 3,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_v_up",
+   "gen_p_up",
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 17,
+  "tag": "anchor",
+  "tripped_line": 18,
+  "load_scale": 1.233203,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 17,
+  "tag": "far_anchor",
+  "tripped_line": 18,
+  "load_scale": 1.049219,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 18,
+  "tag": "anchor",
+  "tripped_line": 16,
+  "load_scale": 1.291797,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 18,
+  "tag": "far_anchor",
+  "tripped_line": 16,
+  "load_scale": 1.099023,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 19,
+  "tag": "anchor",
+  "tripped_line": 36,
+  "load_scale": 1.026758,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_v_up"
+  ]
+ },
+ {
+  "case": "case30",
+  "item_id": 19,
+  "tag": "far_anchor",
+  "tripped_line": 36,
+  "load_scale": 0.87291,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_v_up"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 0,
+  "tag": "anchor",
+  "tripped_line": 0,
+  "load_scale": 1.18125,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": false,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "shed"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 0,
+  "tag": "far_anchor",
+  "tripped_line": 0,
+  "load_scale": 0.921984,
+  "old_label": "EASY",
+  "old_n_fixers": 6,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 6,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 1,
+  "tag": "anchor",
+  "tripped_line": 19,
+  "load_scale": 1.071484,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "tap_up"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 1,
+  "tag": "far_anchor",
+  "tripped_line": 19,
+  "load_scale": 0.911094,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 2,
+  "tag": "anchor",
+  "tripped_line": 9,
+  "load_scale": 1.126562,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "shed"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 2,
+  "tag": "far_anchor",
+  "tripped_line": 9,
+  "load_scale": 0.879176,
+  "old_label": "EASY",
+  "old_n_fixers": 5,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 5,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 3,
+  "tag": "anchor",
+  "tripped_line": 4,
+  "load_scale": 1.144141,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "shed"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 3,
+  "tag": "far_anchor",
+  "tripped_line": 4,
+  "load_scale": 0.892887,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 4,
+  "tag": "anchor",
+  "tripped_line": 17,
+  "load_scale": 1.027148,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 4,
+  "tag": "far_anchor",
+  "tripped_line": 17,
+  "load_scale": 0.873242,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 5,
+  "tag": "anchor",
+  "tripped_line": 24,
+  "load_scale": 1.182031,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "open_line"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 5,
+  "tag": "far_anchor",
+  "tripped_line": 24,
+  "load_scale": 0.922594,
+  "old_label": "EASY",
+  "old_n_fixers": 8,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 8,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "slack_v_up",
+   "tap_up"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 6,
+  "tag": "anchor",
+  "tripped_line": 10,
+  "load_scale": 1.079688,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 7,
+  "tag": "anchor",
+  "tripped_line": 12,
+  "load_scale": 1.133594,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "shed"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 7,
+  "tag": "far_anchor",
+  "tripped_line": 12,
+  "load_scale": 0.88466,
+  "old_label": "EASY",
+  "old_n_fixers": 7,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 6,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [
+   "open_line"
+  ],
+  "surviving_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 8,
+  "tag": "anchor",
+  "tripped_line": 18,
+  "load_scale": 1.158594,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_up"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 9,
+  "tag": "anchor",
+  "tripped_line": 33,
+  "load_scale": 1.178906,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_up"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 9,
+  "tag": "far_anchor",
+  "tripped_line": 33,
+  "load_scale": 0.825781,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 10,
+  "tag": "anchor",
+  "tripped_line": 3,
+  "load_scale": 1.18125,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "shed"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 11,
+  "tag": "anchor",
+  "tripped_line": 27,
+  "load_scale": 1.180469,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_up"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 11,
+  "tag": "far_anchor",
+  "tripped_line": 27,
+  "load_scale": 0.826875,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 12,
+  "tag": "anchor",
+  "tripped_line": 30,
+  "load_scale": 1.178906,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_up"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 12,
+  "tag": "far_anchor",
+  "tripped_line": 30,
+  "load_scale": 0.825781,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 13,
+  "tag": "anchor",
+  "tripped_line": 22,
+  "load_scale": 1.176562,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_up"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 13,
+  "tag": "far_anchor",
+  "tripped_line": 22,
+  "load_scale": 0.918328,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 14,
+  "tag": "anchor",
+  "tripped_line": 13,
+  "load_scale": 1.137695,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "open_line"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 14,
+  "tag": "far_anchor",
+  "tripped_line": 13,
+  "load_scale": 0.887859,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 15,
+  "tag": "anchor",
+  "tripped_line": 28,
+  "load_scale": 1.1125,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_dn"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 15,
+  "tag": "far_anchor",
+  "tripped_line": 28,
+  "load_scale": 0.868207,
+  "old_label": "EASY",
+  "old_n_fixers": 2,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 2,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 16,
+  "tag": "anchor",
+  "tripped_line": 32,
+  "load_scale": 1.179688,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_up"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 16,
+  "tag": "far_anchor",
+  "tripped_line": 32,
+  "load_scale": 0.826328,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 17,
+  "tag": "anchor",
+  "tripped_line": 29,
+  "load_scale": 1.076172,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_up"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 17,
+  "tag": "far_anchor",
+  "tripped_line": 29,
+  "load_scale": 0.753594,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 0,
+  "all_fixers_lost": true,
+  "lost_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn"
+  ],
+  "surviving_action_kinds": []
+ },
+ {
+  "case": "case39",
+  "item_id": 18,
+  "tag": "anchor",
+  "tripped_line": 8,
+  "load_scale": 1.048047,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 19,
+  "tag": "anchor",
+  "tripped_line": 7,
+  "load_scale": 1.135937,
+  "old_label": "TRICKY",
+  "old_n_fixers": 1,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 1,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "shed"
+  ]
+ },
+ {
+  "case": "case39",
+  "item_id": 19,
+  "tag": "far_anchor",
+  "tripped_line": 7,
+  "load_scale": 0.966045,
+  "old_label": "EASY",
+  "old_n_fixers": 4,
+  "base_state_converges_qlims": true,
+  "new_n_fixers_surviving": 4,
+  "all_fixers_lost": false,
+  "lost_action_kinds": [],
+  "surviving_action_kinds": [
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn",
+   "gen_p_dn"
+  ]
+ }
+]

@@ -1,0 +1,875 @@
+{
+ "meta": {
+  "seed": 20260827,
+  "B": 20000,
+  "gate": 0.05,
+  "models": [
+   "gemini-3.7-flash",
+   "gemini-3.1-pro-preview",
+   "gpt-5.6-luna"
+  ],
+  "primary_spec": "M4+loglinear",
+  "cluster_unit": "(case, item_id)",
+  "caveat": "The ESCALATE<->NONE_INDEX contrast is a TWO-EDIT BUNDLE: (1) the menu label word 'ESCALATE' is replaced with 'NONE', and (2) the clause '; hand this to a human operator or a multi-action planner' is deleted. Any 'framing increment' reported here is the joint effect of both edits together, not of word choice alone.",
+  "n_clusters": 40,
+  "gated_cells": []
+ },
+ "cells": {
+  "gemini-3.7-flash|NO_ESCAPE|EASY": {
+   "n_total": 17,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 17,
+   "n_escalated": 2,
+   "esc_rate": 0.11764705882352941,
+   "gated": false
+  },
+  "gemini-3.7-flash|NO_ESCAPE|TRICKY": {
+   "n_total": 58,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 58,
+   "n_escalated": 33,
+   "esc_rate": 0.5689655172413793,
+   "gated": false
+  },
+  "gemini-3.7-flash|NO_ESCAPE|INFEASIBLE": {
+   "n_total": 188,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 188,
+   "n_escalated": 182,
+   "esc_rate": 0.9680851063829787,
+   "gated": false
+  },
+  "gemini-3.7-flash|ESCALATE|EASY": {
+   "n_total": 17,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 17,
+   "n_escalated": 6,
+   "esc_rate": 0.35294117647058826,
+   "gated": false
+  },
+  "gemini-3.7-flash|ESCALATE|TRICKY": {
+   "n_total": 58,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 58,
+   "n_escalated": 49,
+   "esc_rate": 0.8448275862068966,
+   "gated": false
+  },
+  "gemini-3.7-flash|ESCALATE|INFEASIBLE": {
+   "n_total": 188,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 188,
+   "n_escalated": 186,
+   "esc_rate": 0.9893617021276596,
+   "gated": false
+  },
+  "gemini-3.7-flash|NONE_INDEX|EASY": {
+   "n_total": 17,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 17,
+   "n_escalated": 6,
+   "esc_rate": 0.35294117647058826,
+   "gated": false
+  },
+  "gemini-3.7-flash|NONE_INDEX|TRICKY": {
+   "n_total": 58,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 58,
+   "n_escalated": 39,
+   "esc_rate": 0.6724137931034483,
+   "gated": false
+  },
+  "gemini-3.7-flash|NONE_INDEX|INFEASIBLE": {
+   "n_total": 188,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 188,
+   "n_escalated": 183,
+   "esc_rate": 0.973404255319149,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview|NO_ESCAPE|EASY": {
+   "n_total": 17,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 17,
+   "n_escalated": 0,
+   "esc_rate": 0.0,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview|NO_ESCAPE|TRICKY": {
+   "n_total": 58,
+   "n_unparsed": 1,
+   "unparsed_rate": 0.017241379310344827,
+   "n_parsed": 57,
+   "n_escalated": 6,
+   "esc_rate": 0.10526315789473684,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview|NO_ESCAPE|INFEASIBLE": {
+   "n_total": 188,
+   "n_unparsed": 3,
+   "unparsed_rate": 0.015957446808510637,
+   "n_parsed": 185,
+   "n_escalated": 81,
+   "esc_rate": 0.43783783783783786,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview|ESCALATE|EASY": {
+   "n_total": 17,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 17,
+   "n_escalated": 0,
+   "esc_rate": 0.0,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview|ESCALATE|TRICKY": {
+   "n_total": 58,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 58,
+   "n_escalated": 34,
+   "esc_rate": 0.5862068965517241,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview|ESCALATE|INFEASIBLE": {
+   "n_total": 188,
+   "n_unparsed": 2,
+   "unparsed_rate": 0.010638297872340425,
+   "n_parsed": 186,
+   "n_escalated": 168,
+   "esc_rate": 0.9032258064516129,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview|NONE_INDEX|EASY": {
+   "n_total": 17,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 17,
+   "n_escalated": 1,
+   "esc_rate": 0.058823529411764705,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview|NONE_INDEX|TRICKY": {
+   "n_total": 58,
+   "n_unparsed": 2,
+   "unparsed_rate": 0.034482758620689655,
+   "n_parsed": 56,
+   "n_escalated": 24,
+   "esc_rate": 0.42857142857142855,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview|NONE_INDEX|INFEASIBLE": {
+   "n_total": 188,
+   "n_unparsed": 4,
+   "unparsed_rate": 0.02127659574468085,
+   "n_parsed": 184,
+   "n_escalated": 148,
+   "esc_rate": 0.8043478260869565,
+   "gated": false
+  },
+  "gpt-5.6-luna|NO_ESCAPE|EASY": {
+   "n_total": 17,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 17,
+   "n_escalated": 0,
+   "esc_rate": 0.0,
+   "gated": false
+  },
+  "gpt-5.6-luna|NO_ESCAPE|TRICKY": {
+   "n_total": 58,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 58,
+   "n_escalated": 0,
+   "esc_rate": 0.0,
+   "gated": false
+  },
+  "gpt-5.6-luna|NO_ESCAPE|INFEASIBLE": {
+   "n_total": 188,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 188,
+   "n_escalated": 11,
+   "esc_rate": 0.05851063829787234,
+   "gated": false
+  },
+  "gpt-5.6-luna|ESCALATE|EASY": {
+   "n_total": 17,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 17,
+   "n_escalated": 2,
+   "esc_rate": 0.11764705882352941,
+   "gated": false
+  },
+  "gpt-5.6-luna|ESCALATE|TRICKY": {
+   "n_total": 58,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 58,
+   "n_escalated": 12,
+   "esc_rate": 0.20689655172413793,
+   "gated": false
+  },
+  "gpt-5.6-luna|ESCALATE|INFEASIBLE": {
+   "n_total": 188,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 188,
+   "n_escalated": 103,
+   "esc_rate": 0.5478723404255319,
+   "gated": false
+  },
+  "gpt-5.6-luna|NONE_INDEX|EASY": {
+   "n_total": 17,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 17,
+   "n_escalated": 0,
+   "esc_rate": 0.0,
+   "gated": false
+  },
+  "gpt-5.6-luna|NONE_INDEX|TRICKY": {
+   "n_total": 58,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 58,
+   "n_escalated": 4,
+   "esc_rate": 0.06896551724137931,
+   "gated": false
+  },
+  "gpt-5.6-luna|NONE_INDEX|INFEASIBLE": {
+   "n_total": 188,
+   "n_unparsed": 0,
+   "unparsed_rate": 0.0,
+   "n_parsed": 188,
+   "n_escalated": 40,
+   "esc_rate": 0.2127659574468085,
+   "gated": false
+  }
+ },
+ "validation": {
+  "all_match": true,
+  "by_model": {
+   "gemini-3.7-flash": {
+    "delta_c_escalate": -0.589,
+    "ref_escalate": -0.589,
+    "match_escalate": true,
+    "delta_c_none_index": -0.332,
+    "ref_none_index": -0.332,
+    "match_none_index": true
+   },
+   "gemini-3.1-pro-preview": {
+    "delta_c_escalate": -1.163,
+    "ref_escalate": -1.163,
+    "match_escalate": true,
+    "delta_c_none_index": -0.774,
+    "ref_none_index": -0.774,
+    "match_none_index": true
+   },
+   "gpt-5.6-luna": {
+    "delta_c_escalate": -1.4,
+    "ref_escalate": -1.4,
+    "match_escalate": true,
+    "delta_c_none_index": -0.617,
+    "ref_none_index": -0.617,
+    "match_none_index": true
+   }
+  }
+ },
+ "primary_M4_loglinear": {
+  "gemini-3.7-flash": {
+   "delta_c_escalate": -0.5891426197308334,
+   "delta_c_none_index": -0.33222911576585773,
+   "increment": -0.25691350396497564,
+   "increment_ci": [
+    -0.46164034311059743,
+    -0.09056934705535906
+   ],
+   "increment_excludes_0": true,
+   "n_bootstrap_nan": 0,
+   "gated_labels": [],
+   "reportable": true
+  },
+  "gemini-3.1-pro-preview": {
+   "delta_c_escalate": -1.1626848444521376,
+   "delta_c_none_index": -0.7744074859616883,
+   "increment": -0.3882773584904493,
+   "increment_ci": [
+    -0.5990693886242634,
+    -0.2242245698943492
+   ],
+   "increment_excludes_0": true,
+   "n_bootstrap_nan": 0,
+   "gated_labels": [],
+   "reportable": true
+  },
+  "gpt-5.6-luna": {
+   "delta_c_escalate": -1.400342032629158,
+   "delta_c_none_index": -0.6173233071229418,
+   "increment": -0.7830187255062162,
+   "increment_ci": [
+    -1.203904133824294,
+    -0.36359361692844777
+   ],
+   "increment_excludes_0": true,
+   "n_bootstrap_nan": 0,
+   "gated_labels": [],
+   "reportable": true
+  }
+ },
+ "grid": {
+  "M1|clamp|gemini-3.7-flash": {
+   "mapping": "M1",
+   "correction": "clamp",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.6295562632546639,
+   "delta_c_none_index": -0.44471781749662487,
+   "increment": -0.18483844575803898,
+   "increment_ci": [
+    -0.49521485023152106,
+    0.10650362652773003
+   ],
+   "increment_excludes_0": false
+  },
+  "M1|clamp|gemini-3.1-pro-preview": {
+   "mapping": "M1",
+   "correction": "clamp",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.7283033992808052,
+   "delta_c_none_index": -0.6692455871954983,
+   "increment": -0.059057812085306916,
+   "increment_ci": [
+    -0.3349119946318919,
+    0.29371841564123663
+   ],
+   "increment_excludes_0": false
+  },
+  "M1|clamp|gpt-5.6-luna": {
+   "mapping": "M1",
+   "correction": "clamp",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.195182955830471,
+   "delta_c_none_index": -0.38526951795325926,
+   "increment": -0.8099134378772117,
+   "increment_ci": [
+    -1.1680046069243106,
+    -0.40031894768376985
+   ],
+   "increment_excludes_0": true
+  },
+  "M1|loglinear|gemini-3.7-flash": {
+   "mapping": "M1",
+   "correction": "loglinear",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.5647293261294647,
+   "delta_c_none_index": -0.4020864821977178,
+   "increment": -0.16264284393174688,
+   "increment_ci": [
+    -0.46477808518161656,
+    0.10084857669528047
+   ],
+   "increment_excludes_0": false
+  },
+  "M1|loglinear|gemini-3.1-pro-preview": {
+   "mapping": "M1",
+   "correction": "loglinear",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.7216375426501358,
+   "delta_c_none_index": -0.7692158576604755,
+   "increment": 0.04757831501033971,
+   "increment_ci": [
+    -0.3276175736092592,
+    0.3437877215595415
+   ],
+   "increment_excludes_0": false
+  },
+  "M1|loglinear|gpt-5.6-luna": {
+   "mapping": "M1",
+   "correction": "loglinear",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.2482674634669575,
+   "delta_c_none_index": -0.3780336445859498,
+   "increment": -0.8702338188810077,
+   "increment_ci": [
+    -1.1943520161407697,
+    -0.3978723319064438
+   ],
+   "increment_excludes_0": true
+  },
+  "M2|clamp|gemini-3.7-flash": {
+   "mapping": "M2",
+   "correction": "clamp",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.5781252473496399,
+   "delta_c_none_index": -0.20849749155445685,
+   "increment": -0.36962775579518303,
+   "increment_ci": [
+    -0.6160818790592119,
+    -0.15215434141530274
+   ],
+   "increment_excludes_0": true
+  },
+  "M2|clamp|gemini-3.1-pro-preview": {
+   "mapping": "M2",
+   "correction": "clamp",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.3685996424973705,
+   "delta_c_none_index": -1.0029006499844018,
+   "increment": -0.3656989925129688,
+   "increment_ci": [
+    -0.5268000297967907,
+    -0.2380989137428933
+   ],
+   "increment_excludes_0": true
+  },
+  "M2|clamp|gpt-5.6-luna": {
+   "mapping": "M2",
+   "correction": "clamp",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.636090073016217,
+   "delta_c_none_index": -0.8159601452368497,
+   "increment": -0.8201299277793672,
+   "increment_ci": [
+    -1.1951213027927143,
+    -0.5444881379714122
+   ],
+   "increment_excludes_0": true
+  },
+  "M2|loglinear|gemini-3.7-flash": {
+   "mapping": "M2",
+   "correction": "loglinear",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.5478908857434217,
+   "delta_c_none_index": -0.20341490665757123,
+   "increment": -0.3444759790858505,
+   "increment_ci": [
+    -0.6016660092601672,
+    -0.14482556717636164
+   ],
+   "increment_excludes_0": true
+  },
+  "M2|loglinear|gemini-3.1-pro-preview": {
+   "mapping": "M2",
+   "correction": "loglinear",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.3445758047927843,
+   "delta_c_none_index": -0.9842676551730708,
+   "increment": -0.36030814961971347,
+   "increment_ci": [
+    -0.5173846454001666,
+    -0.2342063492232237
+   ],
+   "increment_excludes_0": true
+  },
+  "M2|loglinear|gpt-5.6-luna": {
+   "mapping": "M2",
+   "correction": "loglinear",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.6359150805546294,
+   "delta_c_none_index": -0.8370493825558569,
+   "increment": -0.7988656979987725,
+   "increment_ci": [
+    -1.140984159292162,
+    -0.5359660656122869
+   ],
+   "increment_excludes_0": true
+  },
+  "M3|clamp|gemini-3.7-flash": {
+   "mapping": "M3",
+   "correction": "clamp",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.6812101930280391,
+   "delta_c_none_index": -0.479793981028242,
+   "increment": -0.2014162119997971,
+   "increment_ci": [
+    -0.49025517160287807,
+    0.060427141102352956
+   ],
+   "increment_excludes_0": false
+  },
+  "M3|clamp|gemini-3.1-pro-preview": {
+   "mapping": "M3",
+   "correction": "clamp",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.6527808137011017,
+   "delta_c_none_index": -0.628767789339989,
+   "increment": -0.024013024361112745,
+   "increment_ci": [
+    -0.23411843025429066,
+    0.3083644061128854
+   ],
+   "increment_excludes_0": false
+  },
+  "M3|clamp|gpt-5.6-luna": {
+   "mapping": "M3",
+   "correction": "clamp",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.1597395415955458,
+   "delta_c_none_index": -0.38934798979687435,
+   "increment": -0.7703915517986715,
+   "increment_ci": [
+    -1.1179056593440355,
+    -0.36893141830563886
+   ],
+   "increment_excludes_0": true
+  },
+  "M3|loglinear|gemini-3.7-flash": {
+   "mapping": "M3",
+   "correction": "loglinear",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.6354345593436882,
+   "delta_c_none_index": -0.4389352344240062,
+   "increment": -0.19649932491968197,
+   "increment_ci": [
+    -0.46057082088086704,
+    0.04813588263788858
+   ],
+   "increment_excludes_0": false
+  },
+  "M3|loglinear|gemini-3.1-pro-preview": {
+   "mapping": "M3",
+   "correction": "loglinear",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.6493912230849614,
+   "delta_c_none_index": -0.7300322641427539,
+   "increment": 0.08064104105779246,
+   "increment_ci": [
+    -0.23254723826784784,
+    0.35409580042615607
+   ],
+   "increment_excludes_0": false
+  },
+  "M3|loglinear|gpt-5.6-luna": {
+   "mapping": "M3",
+   "correction": "loglinear",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.2135414617600344,
+   "delta_c_none_index": -0.38221481994451434,
+   "increment": -0.8313266418155201,
+   "increment_ci": [
+    -1.14512839952276,
+    -0.367013797337429
+   ],
+   "increment_excludes_0": true
+  },
+  "M4|clamp|gemini-3.7-flash": {
+   "mapping": "M4",
+   "correction": "clamp",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.6072757525782168,
+   "delta_c_none_index": -0.3420570015709776,
+   "increment": -0.26521875100723913,
+   "increment_ci": [
+    -0.48297551346567086,
+    -0.09276418365043132
+   ],
+   "increment_excludes_0": true
+  },
+  "M4|clamp|gemini-3.1-pro-preview": {
+   "mapping": "M4",
+   "correction": "clamp",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.2092326792905224,
+   "delta_c_none_index": -0.8090577086439992,
+   "increment": -0.4001749706465232,
+   "increment_ci": [
+    -0.6300119670412647,
+    -0.23011793214398862
+   ],
+   "increment_excludes_0": true
+  },
+  "M4|clamp|gpt-5.6-luna": {
+   "mapping": "M4",
+   "correction": "clamp",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.3828181638732508,
+   "delta_c_none_index": -0.5332465495310885,
+   "increment": -0.8495716143421623,
+   "increment_ci": [
+    -1.1910767543868541,
+    -0.36277275065590014
+   ],
+   "increment_excludes_0": true
+  },
+  "M4|loglinear|gemini-3.7-flash": {
+   "mapping": "M4",
+   "correction": "loglinear",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.5891426197308334,
+   "delta_c_none_index": -0.33222911576585773,
+   "increment": -0.25691350396497564,
+   "increment_ci": [
+    -0.46164034311059743,
+    -0.09056934705535906
+   ],
+   "increment_excludes_0": true
+  },
+  "M4|loglinear|gemini-3.1-pro-preview": {
+   "mapping": "M4",
+   "correction": "loglinear",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.1626848444521376,
+   "delta_c_none_index": -0.7744074859616883,
+   "increment": -0.3882773584904493,
+   "increment_ci": [
+    -0.5990693886242634,
+    -0.2242245698943492
+   ],
+   "increment_excludes_0": true
+  },
+  "M4|loglinear|gpt-5.6-luna": {
+   "mapping": "M4",
+   "correction": "loglinear",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.400342032629158,
+   "delta_c_none_index": -0.6173233071229418,
+   "increment": -0.7830187255062162,
+   "increment_ci": [
+    -1.203904133824294,
+    -0.36359361692844777
+   ],
+   "increment_excludes_0": true
+  },
+  "M5|clamp|gemini-3.7-flash": {
+   "mapping": "M5",
+   "correction": "clamp",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.5652663997674624,
+   "delta_c_none_index": -0.34291759340215944,
+   "increment": -0.22234880636530296,
+   "increment_ci": [
+    -0.45273372874970214,
+    -0.005439730991923798
+   ],
+   "increment_excludes_0": true
+  },
+  "M5|clamp|gemini-3.1-pro-preview": {
+   "mapping": "M5",
+   "correction": "clamp",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.2817406694554572,
+   "delta_c_none_index": -0.8247673325669469,
+   "increment": -0.4569733368885103,
+   "increment_ci": [
+    -0.7149440803526096,
+    -0.2637403234907635
+   ],
+   "increment_excludes_0": true
+  },
+  "M5|clamp|gpt-5.6-luna": {
+   "mapping": "M5",
+   "correction": "clamp",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.408239527600772,
+   "delta_c_none_index": -0.5294760723276364,
+   "increment": -0.8787634552731356,
+   "increment_ci": [
+    -1.226926783593727,
+    -0.38842942557752425
+   ],
+   "increment_excludes_0": true
+  },
+  "M5|loglinear|gemini-3.7-flash": {
+   "mapping": "M5",
+   "correction": "loglinear",
+   "model": "gemini-3.7-flash",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -0.5300097991985602,
+   "delta_c_none_index": -0.3309645098951399,
+   "increment": -0.19904528930342025,
+   "increment_ci": [
+    -0.438134228675525,
+    0.0
+   ],
+   "increment_excludes_0": false
+  },
+  "M5|loglinear|gemini-3.1-pro-preview": {
+   "mapping": "M5",
+   "correction": "loglinear",
+   "model": "gemini-3.1-pro-preview",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.232323783029773,
+   "delta_c_none_index": -0.7891765894360326,
+   "increment": -0.44314719359374044,
+   "increment_ci": [
+    -0.682020782960346,
+    -0.2556409663050065
+   ],
+   "increment_excludes_0": true
+  },
+  "M5|loglinear|gpt-5.6-luna": {
+   "mapping": "M5",
+   "correction": "loglinear",
+   "model": "gpt-5.6-luna",
+   "gated_labels": [],
+   "reportable": true,
+   "delta_c_escalate": -1.4252168898081807,
+   "delta_c_none_index": -0.61348275065148,
+   "increment": -0.8117341391567008,
+   "increment_ci": [
+    -1.238694260554819,
+    -0.38999663193077866
+   ],
+   "increment_excludes_0": true
+  }
+ },
+ "grid_summary": {
+  "total_cells": 30,
+  "gated_not_reportable": 0,
+  "reportable": 30,
+  "excludes_zero": 21,
+  "excludes_zero_negative": 21,
+  "excludes_zero_positive": 0,
+  "all_reportable_points_negative": false,
+  "n_points_negative": 28,
+  "n_points_positive": 2,
+  "n_points_total": 30
+ },
+ "grid_by_model": {
+  "gemini-3.7-flash": {
+   "n_cells": 10,
+   "n_reportable": 10,
+   "n_excludes_zero": 5,
+   "n_excludes_zero_negative": 5,
+   "n_excludes_zero_positive": 0,
+   "all_reportable_negative": true
+  },
+  "gemini-3.1-pro-preview": {
+   "n_cells": 10,
+   "n_reportable": 10,
+   "n_excludes_zero": 6,
+   "n_excludes_zero_negative": 6,
+   "n_excludes_zero_positive": 0,
+   "all_reportable_negative": false
+  },
+  "gpt-5.6-luna": {
+   "n_cells": 10,
+   "n_reportable": 10,
+   "n_excludes_zero": 10,
+   "n_excludes_zero_negative": 10,
+   "n_excludes_zero_positive": 0,
+   "all_reportable_negative": true
+  }
+ },
+ "raw_rate_infeasible_escalate_minus_none_index": {
+  "gemini-3.7-flash": {
+   "escalate_rate": 0.9893617021276596,
+   "escalate_k": 186,
+   "escalate_n": 188,
+   "none_index_rate": 0.973404255319149,
+   "none_index_k": 183,
+   "none_index_n": 188,
+   "risk_diff": 0.015957446808510634,
+   "rd_ci": [
+    0.0,
+    0.03645833333333326
+   ],
+   "rd_excludes_0": false,
+   "gated": false
+  },
+  "gemini-3.1-pro-preview": {
+   "escalate_rate": 0.9032258064516129,
+   "escalate_k": 168,
+   "escalate_n": 186,
+   "none_index_rate": 0.8043478260869565,
+   "none_index_k": 148,
+   "none_index_n": 184,
+   "risk_diff": 0.09887798036465634,
+   "rd_ci": [
+    0.04214097896284884,
+    0.16023191420905497
+   ],
+   "rd_excludes_0": true,
+   "gated": false
+  },
+  "gpt-5.6-luna": {
+   "escalate_rate": 0.5478723404255319,
+   "escalate_k": 103,
+   "escalate_n": 188,
+   "none_index_rate": 0.2127659574468085,
+   "none_index_k": 40,
+   "none_index_n": 188,
+   "risk_diff": 0.3351063829787234,
+   "rd_ci": [
+    0.25344165474866254,
+    0.418848167539267
+   ],
+   "rd_excludes_0": true,
+   "gated": false
+  }
+ },
+ "verdict": "The framing increment EXCLUDES ZERO for all three models under the primary M4+loglinear spec, and is negative in every reportable cell of the full 5x2 grid where it excludes zero (21/30 reportable grid cells). Ling et al.'s null of wording-irrelevance FAILS to hold in this agentic escalation setting: naming a human operator / multi-action planner shifts the criterion measurably beyond what a bare in-schema NONE affordance already produces. This is the joint effect of the two-edit bundle described in the caveat above, not an isolated word-choice effect.",
+ "verdict_inputs": {
+  "all_primary_excludes_0": true,
+  "any_primary_excludes_0": true,
+  "all_primary_negative": true
+ }
+}

@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "seed": 20260827,
+    "B": 20000,
+    "cluster_unit": "(case, item_id)",
+    "n_clusters": 40,
+    "gate": 0.05,
+    "model": "gemini-3.7-flash",
+    "arm": "ESCALATE",
+    "old_file": "v2_ladder_gemini-3.7-flash_ESCALATE.jsonl",
+    "new_file": "v2_ladder_gemini-3.7-flash_ESCALATE_AA.jsonl",
+    "old_harness": "harness_v2.py (2026-08-27)",
+    "new_harness": "harness_v2b_aa.py (2026-08-31)"
+  },
+  "sanity_check": {
+    "all_match": true,
+    "detail": {
+      "EASY": {
+        "expected": {
+          "old": 0.353,
+          "new": 0.412,
+          "n": 17
+        },
+        "got_old": 0.353,
+        "got_new": 0.412,
+        "got_n": 17,
+        "match": true
+      },
+      "TRICKY": {
+        "expected": {
+          "old": 0.845,
+          "new": 0.862,
+          "n": 58
+        },
+        "got_old": 0.845,
+        "got_new": 0.862,
+        "got_n": 58,
+        "match": true
+      },
+      "INFEASIBLE": {
+        "expected": {
+          "old": 0.989,
+          "new": 0.989,
+          "n": 188
+        },
+        "got_old": 0.989,
+        "got_new": 0.989,
+        "got_n": 188,
+        "match": true
+      }
+    }
+  },
+  "rates": {
+    "EASY": {
+      "old": {
+        "n": 17,
+        "n_unparsed": 0,
+        "unparsed_rate": 0.0,
+        "gated": false,
+        "n_parsed": 17,
+        "k_escalated": 6,
+        "rate": 0.35294117647058826
+      },
+      "new": {
+        "n": 17,
+        "n_unparsed": 0,
+        "unparsed_rate": 0.0,
+        "gated": false,
+        "n_parsed": 17,
+        "k_escalated": 7,
+        "rate": 0.4117647058823529
+      }
+    },
+    "TRICKY": {
+      "old": {
+        "n": 58,
+        "n_unparsed": 0,
+        "unparsed_rate": 0.0,
+        "gated": false,
+        "n_parsed": 58,
+        "k_escalated": 49,
+        "rate": 0.8448275862068966
+      },
+      "new": {
+        "n": 58,
+        "n_unparsed": 0,
+        "unparsed_rate": 0.0,
+        "gated": false,
+        "n_parsed": 58,
+        "k_escalated": 50,
+        "rate": 0.8620689655172413
+      }
+    },
+    "INFEASIBLE": {
+      "old": {
+        "n": 188,
+        "n_unparsed": 0,
+        "unparsed_rate": 0.0,
+        "gated": false,
+        "n_parsed": 188,
+        "k_escalated": 186,
+        "rate": 0.9893617021276596
+      },
+      "new": {
+        "n": 188,
+        "n_unparsed": 0,
+        "unparsed_rate": 0.0,
+        "gated": false,
+        "n_parsed": 188,
+        "k_escalated": 186,
+        "rate": 0.9893617021276596
+      }
+    }
+  },
+  "rate_diff_ci": {
+    "EASY": {
+      "point_diff": 0.05882352941176466,
+      "ci_lo": -0.14285714285714285,
+      "ci_hi": 0.26666666666666666,
+      "excludes_zero": false,
+      "n_masked_resamples": 0
+    },
+    "TRICKY": {
+      "point_diff": 0.01724137931034475,
+      "ci_lo": -0.08333333333333337,
+      "ci_hi": 0.1166666666666667,
+      "excludes_zero": false,
+      "n_masked_resamples": 0
+    },
+    "INFEASIBLE": {
+      "point_diff": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0,
+      "excludes_zero": false,
+      "n_masked_resamples": 0
+    }
+  },
+  "m4_loglinear_c": {
+    "c_old": -1.0018426952687214,
+    "c_new": -1.076628811444421,
+    "delta_c": -0.07478611617569952,
+    "delta_c_ci": [
+      -0.3134357807173259,
+      0.1608696121312747
+    ],
+    "excludes_zero": false,
+    "n_masked_resamples": 0,
+    "totals_old": {
+      "hS": 221,
+      "nS": 229,
+      "hN": 20,
+      "nN": 34
+    },
+    "totals_new": {
+      "hS": 221,
+      "nS": 229,
+      "hN": 22,
+      "nN": 34
+    }
+  },
+  "unparsed_vs_gate": {
+    "EASY|old": {
+      "n": 17,
+      "n_unparsed": 0,
+      "unparsed_rate": 0.0,
+      "gate": 0.05,
+      "gated": false,
+      "status": "ok"
+    },
+    "EASY|new": {
+      "n": 17,
+      "n_unparsed": 0,
+      "unparsed_rate": 0.0,
+      "gate": 0.05,
+      "gated": false,
+      "status": "ok"
+    },
+    "TRICKY|old": {
+      "n": 58,
+      "n_unparsed": 0,
+      "unparsed_rate": 0.0,
+      "gate": 0.05,
+      "gated": false,
+      "status": "ok"
+    },
+    "TRICKY|new": {
+      "n": 58,
+      "n_unparsed": 0,
+      "unparsed_rate": 0.0,
+      "gate": 0.05,
+      "gated": false,
+      "status": "ok"
+    },
+    "INFEASIBLE|old": {
+      "n": 188,
+      "n_unparsed": 0,
+      "unparsed_rate": 0.0,
+      "gate": 0.05,
+      "gated": false,
+      "status": "ok"
+    },
+    "INFEASIBLE|new": {
+      "n": 188,
+      "n_unparsed": 0,
+      "unparsed_rate": 0.0,
+      "gate": 0.05,
+      "gated": false,
+      "status": "ok"
+    },
+    "overall|old": {
+      "n": 263,
+      "n_unparsed": 0,
+      "unparsed_rate": 0.0,
+      "gate": 0.05,
+      "gated": false,
+      "status": "ok"
+    },
+    "overall|new": {
+      "n": 263,
+      "n_unparsed": 0,
+      "unparsed_rate": 0.0,
+      "gate": 0.05,
+      "gated": false,
+      "status": "ok"
+    }
+  },
+  "wall_time": {
+    "created": "2026-08-31 19:51:43",
+    "final_row_written": "2026-08-31 19:59:01",
+    "wall_time_str": "7 min 18 sec",
+    "n_calls": 263,
+    "includes_smoke_test": 3,
+    "max_workers": 6,
+    "retries": 0,
+    "cap_used": 8192,
+    "retry_rung_16384_needed": 0,
+    "non_stop_finish_reasons": 0,
+    "file_mtime_check": "2026-08-31 19:59:01",
+    "mtime_consistent": true
+  },
+  "verdict": "All three per-label rate-difference 95% CIs and the M4/loglinear delta-c 95% CI include zero, so the OLD-vs-NEW gap looks like ordinary run-to-run sampling noise, not a systematic harness-version or run-date effect.",
+  "verdict_justification": "The observed differences are tiny in absolute terms \u2014 EASY moved by 1 escalation(s) out of 17 rows (1/17), TRICKY by 1 out of 58 (1/58), and INFEASIBLE by 0 out of 188 (0/188) \u2014 exactly the size of gap you'd expect from token-level or infrastructure-level stochasticity even at temperature=0, not a systematic shift from changing harness code paths or run date. The bootstrap confidence intervals, which is what we actually rely on rather than this intuition, back this up: all four intervals span zero."
+}

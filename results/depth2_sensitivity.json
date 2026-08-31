@@ -1,0 +1,281 @@
+{
+ "case": "case30",
+ "max_item": 10,
+ "pair_cap": 500,
+ "seed": 20260827,
+ "results": {
+  "0.99": {
+   "served_tol": 0.99,
+   "n_found": 0,
+   "n_total": 10,
+   "rows": [
+    {
+     "tripped": 14,
+     "scale": 1.309375,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.335562,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.374844,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.440312,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.57125,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.767656,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.289453,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.315242,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.353926,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.418398,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    }
+   ]
+  },
+  "0.95": {
+   "served_tol": 0.95,
+   "n_found": 2,
+   "n_total": 10,
+   "rows": [
+    {
+     "tripped": 14,
+     "scale": 1.309375,
+     "depth2_fix": true,
+     "pairs_tried": 12,
+     "example": [
+      "raise generator 4 voltage setpoint by 0.02 pu",
+      "shed 25% of load 4"
+     ],
+     "served_frac": 0.9603594080338267
+    },
+    {
+     "tripped": 14,
+     "scale": 1.335562,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.374844,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.440312,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.57125,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.767656,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.289453,
+     "depth2_fix": true,
+     "pairs_tried": 48,
+     "example": [
+      "raise generator 0 voltage setpoint by 0.02 pu",
+      "shed 25% of load 4"
+     ],
+     "served_frac": 0.9603594080338267
+    },
+    {
+     "tripped": 10,
+     "scale": 1.315242,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.353926,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.418398,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    }
+   ]
+  },
+  "0.9": {
+   "served_tol": 0.9,
+   "n_found": 2,
+   "n_total": 10,
+   "rows": [
+    {
+     "tripped": 14,
+     "scale": 1.309375,
+     "depth2_fix": true,
+     "pairs_tried": 4,
+     "example": [
+      "shed 25% of load 3",
+      "shed 25% of load 4"
+     ],
+     "served_frac": 0.9302325581395349
+    },
+    {
+     "tripped": 14,
+     "scale": 1.335562,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.374844,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.440312,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.57125,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 14,
+     "scale": 1.767656,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.289453,
+     "depth2_fix": true,
+     "pairs_tried": 48,
+     "example": [
+      "raise generator 0 voltage setpoint by 0.02 pu",
+      "shed 25% of load 4"
+     ],
+     "served_frac": 0.9603594080338267
+    },
+    {
+     "tripped": 10,
+     "scale": 1.315242,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.353926,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    },
+    {
+     "tripped": 10,
+     "scale": 1.418398,
+     "depth2_fix": false,
+     "pairs_tried": 500,
+     "example": null,
+     "served_frac": null
+    }
+   ]
+  }
+ }
+}

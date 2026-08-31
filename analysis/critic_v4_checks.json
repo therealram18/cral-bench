@@ -1,0 +1,352 @@
+{
+ "meta": {
+  "seed": 20260827,
+  "B": 20000,
+  "gate": 0.05,
+  "python": "/path/to/anonymized/scratchpad/.venv/bin/python",
+  "pandapower_version": "3.5.4",
+  "numpy_version": "2.4.6",
+  "scipy_version": "1.16.3",
+  "timestamp": "2026-08-31T20:19:21.766559",
+  "pack_root": "/path/to/cral_original_pack/powergrid",
+  "note": "critic-v4 pass: every number below freshly computed by code written for this pass, run against canonical on-disk JSON/JSONL or fresh local AC power-flow solves (pandapower, CPU only, numba=False). No network calls. This is pass #4 in the adversarial-review chain (critic_v2, critic_v3 already on disk); numbers here independently reconfirm or correct those passes as noted per item."
+ },
+ "item1": {
+  "paper_quote": "main.tex (Oracle-sensitivity paragraph, ~line 367-384): \"Of the 18 flagged case39 scenarios' 900 (scenario,action) pairs (18x50) under q-lims, 133 fail to converge; under alternative solver settings (init/iteration/tolerance), 25 of the 133 converge, 0 of the 25 clear --- non-convergence hides no fixes.\" Preceding sentence: \"17 of 36 case39 fixable items flip (47%)\" -- confirms 18 = 17 flips + the 1 base-diverging item which is itself one of those 17 flips (paper's own arithmetic, independently reproduced below).",
+  "flagged_18_scope": {
+   "n_scenarios": 18,
+   "n_old_tricky_anchor": 16,
+   "n_old_easy_far_anchor": 2,
+   "base_diverging_item": {
+    "item_id": 0,
+    "tag": "anchor"
+   },
+   "menu_length_verified": 50
+  },
+  "menu_length_verified": 50,
+  "a_shipped_settings_900pairs": {
+   "n_pairs": 900,
+   "n_fail": 1,
+   "note": "enforce_q_lims=False (shipped/paper default), numba=False, max_iteration=30, no init/tolerance override -- literally certify_v2.py's solve()."
+  },
+  "b_shipped_settings_rescue": {
+   "n_failing": 1,
+   "n_converge_any_alt": 0,
+   "n_clear_any_alt": 0
+  },
+  "c_reconciliation": {
+   "scope_i_shipped_settings_900": 1,
+   "scope_ii_qlims_true_900": 133,
+   "scope_iii_menu_converged_lt50": {
+    "n_entries": 19,
+    "n_unique_item_ids": 16,
+    "label_breakdown": {
+     "INFEASIBLE": 18,
+     "TRICKY": 1
+    },
+    "sum_failing_actions_original_build": 103,
+    "note": "This scope is explicitly NOT the paper's '18 flagged case39 scenarios' -- it spans 16 different item_ids (including item_id=19, which is never in the q-lims-flip 18-set) and is dominated by rung entries whose old_label is already INFEASIBLE (18/19 entries), not the TRICKY/EASY fixable scenarios the paper's sentence describes. Must not be conflated with the q-lims-flip 18-set."
+   },
+   "does_102_reproduce_under_any_scope": false,
+   "closest_scope_to_102": "scope_iii (menu_converged<50): sum=103, off by 1 -- not a match, and not the right scope regardless (see note above); no scope on disk produces exactly 102.",
+   "session_prior_critic_v2_claimed_1": 1,
+   "this_pass_shipped_settings_value": 1,
+   "matches_critic_v2_prior_1": true
+  },
+  "d_qlims_true_900pairs": {
+   "n_pairs": 900,
+   "n_fail": 133,
+   "note": "enforce_q_lims=True, numba=False, max_iteration=30, no init/tolerance override -- same shipped numba/max_iteration as (a), q-lims turned on.",
+   "matches_paper_133": true
+  },
+  "d_qlims_true_rescue": {
+   "n_failing": 133,
+   "n_converge_any_alt": 19,
+   "n_clear_any_alt": 0,
+   "matches_paper_25": false,
+   "DISAGREES_WITH_PAPER_AND_CRITIC_V2V3": true,
+   "mechanistic_explanation": {
+    "summary": "The paper's printed '25 of 133 converge' (= critic_v2_checks.json's stored n_rescued_converge=25) was reproduced from critic_v2's OWN stored rescue_detail, and every one of those 25 successes converges ONLY under a settings-dict that OMITS max_iteration entirely (e.g. {'init':'dc'}, {'tolerance_mva':0.001}), which makes pandapower fall back to its true default max_iteration='auto' -- NOT the task's literal spec of 'max_iteration in {30, 500}' (always one of these two values, explicitly passed, for every one of the 11 alternatives). Not one of critic_v2's 25 rescues converges under any combo that explicitly sets max_iteration=500 together with other overrides. This pass's 11 alternatives always pass max_iteration explicitly (30 or 500, per the task's literal factorial), so pandapower's 'auto' behavior -- whatever it actually does internally -- is never invoked, and the 6 pairs that only rescued via 'auto'-max_iteration combos in critic_v2's run do not rescue here.",
+    "verified_cv2_25_all_via_no_maxiter_override": true,
+    "cv2_n_rescued": 25,
+    "this_pass_n_rescued": 19,
+    "gap": 6
+   },
+   "verdict": "CORRECTED. Under the task's literal 11-combo spec (max_iteration always explicit, 30 or 500, never left at pandapower's true default), 19/133 converge under >=1 alternative, not 25/133. 0/133 clear either way, so the paper's substantive claim ('non-convergence hides no fixes') is unaffected. The paper's printed count (25) should either be re-derived with max_iteration held explicit in every alternative, or the alternative-settings list should be documented precisely (it is currently under-specified in main.tex, which just says 'alternative solver settings (init/iteration/tolerance)')."
+  }
+ },
+ "item2": {
+  "per_model": {
+   "gemini-3.7-flash": {
+    "FA_added": 9,
+    "drastic_added": 11,
+    "infeasible_gain": 4,
+    "ratio_raw_w0": 5.0,
+    "ratio_M4_w1": 0.6,
+    "raw_string": "20/4",
+    "m4_string": "9/15",
+    "w_star": 0.7272727272727273,
+    "w_star_in_0_1": true
+   },
+   "gemini-3.1-pro-preview": {
+    "FA_added": 9,
+    "drastic_added": 19,
+    "infeasible_gain": 87,
+    "ratio_raw_w0": 0.3218390804597701,
+    "ratio_M4_w1": 0.08490566037735849,
+    "raw_string": "28/87",
+    "m4_string": "9/106",
+    "w_star": -1.5526315789473684,
+    "w_star_in_0_1": false
+   },
+   "gpt-5.6-luna": {
+    "FA_added": 5,
+    "drastic_added": 9,
+    "infeasible_gain": 92,
+    "ratio_raw_w0": 0.15217391304347827,
+    "ratio_M4_w1": 0.04950495049504951,
+    "raw_string": "14/92",
+    "m4_string": "5/101",
+    "w_star": -4.333333333333333,
+    "w_star_in_0_1": false
+   }
+  },
+  "gate_check": {
+   "gemini-3.7-flash": [],
+   "gemini-3.1-pro-preview": [],
+   "gpt-5.6-luna": []
+  },
+  "flash_matches_9_11_4": true,
+  "bootstrap_M4_ratio": {
+   "gemini-3.7-flash": {
+    "point_ratio1": 0.6,
+    "ci95": [
+     0.20833333333333334,
+     1.4444444444444444
+    ],
+    "n_unusable_draws": 0,
+    "n_total_draws": 20000
+   },
+   "gemini-3.1-pro-preview": {
+    "point_ratio1": 0.08490566037735849,
+    "ci95": [
+     0.031746031746031744,
+     0.16049382716049382
+    ],
+    "n_unusable_draws": 0,
+    "n_total_draws": 20000
+   },
+   "gpt-5.6-luna": {
+    "point_ratio1": 0.04950495049504951,
+    "ci95": [
+     0.010309278350515464,
+     0.09876543209876543
+    ],
+    "n_unusable_draws": 0,
+    "n_total_draws": 20000
+   }
+  },
+  "ordering": {
+   "raw_values": {
+    "gemini-3.7-flash": 5.0,
+    "gemini-3.1-pro-preview": 0.3218390804597701,
+    "gpt-5.6-luna": 0.15217391304347827
+   },
+   "m4_values": {
+    "gemini-3.7-flash": 0.6,
+    "gemini-3.1-pro-preview": 0.08490566037735849,
+    "gpt-5.6-luna": 0.04950495049504951
+   },
+   "raw_order_flash_gt_pro_gt_luna": true,
+   "m4_order_flash_gt_pro_gt_luna": true
+  }
+ },
+ "item3": {
+  "base_diverging_row": {
+   "case": "case39",
+   "item_id": "0",
+   "tag": "anchor",
+   "old_label": "TRICKY",
+   "matches_expected": true
+  },
+  "n_flips_total_folded": 18,
+  "n_flips_true_drop": 17,
+  "fixable_pool_recomputed": {
+   "by_case": {
+    "case30": 39,
+    "case39": 36
+   },
+   "total": 75
+  },
+  "true_drop_accounting": {
+   "numerator": 17,
+   "denominator_overall": 74,
+   "pct_overall": 22.972972972972972,
+   "denominator_case39": 35,
+   "pct_case39": 48.57142857142857
+  },
+  "critic_v3_inconsistent_accounting": {
+   "numerator": 17,
+   "denominator_overall": 75,
+   "pct_overall": 22.666666666666668,
+   "denominator_case39": 36,
+   "pct_case39": 47.22222222222222
+  },
+  "verdict": "true-drop (both numerator and denominator exclude the dropped item) is the mathematically consistent accounting for a 'dropped, not relabeled' item; critic_v3's 75/36 denominators keep the item in the denominator while dropping it only from the numerator, which is inconsistent with that literal wording."
+ },
+ "item4": {
+  "gemini-3.7-flash": {
+   "delta_c_none_index_full": -0.33222911576585773,
+   "increment_full": -0.25691350396497564,
+   "delta_c_escalate_full": -0.5891426197308334,
+   "identity_holds_1e9": true,
+   "rounded_3dp": {
+    "delta_c_none_index": -0.332,
+    "increment": -0.257,
+    "delta_c_escalate": -0.589
+   },
+   "sum_of_rounded_components": -0.589,
+   "sum_then_round_matches_round_then_sum": true
+  },
+  "gemini-3.1-pro-preview": {
+   "delta_c_none_index_full": -0.7744074859616883,
+   "increment_full": -0.3882773584904493,
+   "delta_c_escalate_full": -1.1626848444521376,
+   "identity_holds_1e9": true,
+   "rounded_3dp": {
+    "delta_c_none_index": -0.774,
+    "increment": -0.388,
+    "delta_c_escalate": -1.163
+   },
+   "sum_of_rounded_components": -1.162,
+   "sum_then_round_matches_round_then_sum": false
+  },
+  "gpt-5.6-luna": {
+   "delta_c_none_index_full": -0.6173233071229418,
+   "increment_full": -0.7830187255062162,
+   "delta_c_escalate_full": -1.400342032629158,
+   "identity_holds_1e9": true,
+   "rounded_3dp": {
+    "delta_c_none_index": -0.617,
+    "increment": -0.783,
+    "delta_c_escalate": -1.4
+   },
+   "sum_of_rounded_components": -1.4,
+   "sum_then_round_matches_round_then_sum": true
+  }
+ },
+ "item5": {
+  "quotes": {
+   "N_extra_menu_entry": null,
+   "I_extra_menu_entry": "NONE \u2014 no single action above resolves all violations.",
+   "E_extra_menu_entry": "ESCALATE \u2014 no single action above resolves all violations; hand this to a human operator or a multi-action planner.",
+   "N_tail": "Choose the ONE option that clears ALL listed violations. If you judge that no single action can, reply {\"choice\": \"NONE\", \"reason\": \"...\"}.",
+   "I_tail": "Choose the ONE action that clears ALL listed violations. If no single action can, choose NONE.",
+   "E_tail": "Choose the ONE action that clears ALL listed violations. If no single action can, choose ESCALATE."
+  },
+  "I_minus_N": {
+   "edit_count": 3,
+   "edits": [
+    {
+     "n": 1,
+     "kind": "menu_entry_added",
+     "detail": "I adds '[n] NONE \u2014 no single action above resolves all violations.' -- absent from N entirely."
+    },
+    {
+     "n": 2,
+     "kind": "tail_sentence1_word_swap",
+     "detail": "N: 'Choose the ONE option that clears ALL listed violations.'  ->  I: 'Choose the ONE action that clears ALL listed violations.'  (changed=True)"
+    },
+    {
+     "n": 3,
+     "kind": "tail_sentence2_full_replace",
+     "detail": "N: 'If you judge that no single action can, reply {\"choice\": \"NONE\", \"reason\": \"...\"}.'  ->  I: (folded into) 'If no single action can, choose NONE.'"
+    }
+   ],
+   "unified_diff_tail": [
+    "--- ",
+    "+++ ",
+    "@@ -1,2 +1,2 @@",
+    "-Choose the ONE option that clears ALL listed violations.",
+    "-If you judge that no single action can, reply {\"choice\": \"NONE\", \"reason\": \"...\"}.",
+    "+Choose the ONE action that clears ALL listed violations.",
+    "+If no single action can, choose NONE."
+   ],
+   "matches_task_expectation_of_3": true
+  },
+  "E_minus_I": {
+   "edit_count": 2,
+   "edits": [
+    {
+     "n": 1,
+     "kind": "menu_entry_word_and_clause_change",
+     "detail": "I: 'NONE \u2014 no single action above resolves all violations.'  ->  E: 'ESCALATE \u2014 no single action above resolves all violations; hand this to a human operator or a multi-action planner.'"
+    },
+    {
+     "n": 2,
+     "kind": "tail_final_word_change",
+     "detail": "I: ...'ingle action can, choose NONE.'  ->  E: ...'e action can, choose ESCALATE.'"
+    }
+   ],
+   "unified_diff_menu_entry": [
+    "--- ",
+    "+++ ",
+    "@@ -1 +1 @@",
+    "-NONE \u2014 no single action above resolves all violations.",
+    "+ESCALATE \u2014 no single action above resolves all violations; hand this to a human operator or a multi-action planner."
+   ],
+   "tail_sentence1_identical": true,
+   "matches_task_expectation_of_2": true
+  }
+ },
+ "item6": {
+  "per_label_rates": {
+   "EASY": {
+    "k": 6,
+    "n": 17,
+    "rate": 0.35294117647058826,
+    "n_total": 17,
+    "n_unparsed": 0
+   },
+   "TRICKY": {
+    "k": 49,
+    "n": 58,
+    "rate": 0.8448275862068966,
+    "n_total": 58,
+    "n_unparsed": 0
+   },
+   "INFEASIBLE": {
+    "k": 186,
+    "n": 188,
+    "rate": 0.9893617021276596,
+    "n_total": 188,
+    "n_unparsed": 0
+   }
+  },
+  "m4_loglinear": {
+   "hS": 221,
+   "nS": 229,
+   "hN": 20,
+   "nN": 34,
+   "h": 0.9650655021834061,
+   "f": 0.5882352941176471,
+   "c_escalate": -1.0018426952687214,
+   "d_escalate": 1.5706171416391008
+  },
+  "crosscheck_v2_sdt_results_json": {
+   "h": 0.9650655021834061,
+   "f": 0.5882352941176471,
+   "d": 1.5706171416391008,
+   "c": -1.0018426952687214,
+   "nS": 229,
+   "nN": 34,
+   "hS": 221,
+   "hN": 20,
+   "floor_ceiling": false,
+   "gated_labels": [],
+   "reportable": true
+  },
+  "crosscheck_c_matches": true,
+  "crosscheck_d_matches": true
+ }
+}
